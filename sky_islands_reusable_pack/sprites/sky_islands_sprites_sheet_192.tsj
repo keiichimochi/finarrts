@@ -1,0 +1,1473 @@
+{
+  "type": "tileset",
+  "tiledversion": "1.10.2",
+  "version": "1.10",
+  "name": "sky_islands_sprites_sheet_192",
+  "tilewidth": 192,
+  "tileheight": 192,
+  "spacing": 0,
+  "margin": 0,
+  "columns": 6,
+  "tilecount": 26,
+  "image": "sky_islands_sprites_sheet_192.png",
+  "imagewidth": 1152,
+  "imageheight": 960,
+  "tiles": [
+    {
+      "id": 0,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "castle_northwest"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9969
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 170
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 130
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "北西の城。"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "arcane_tower"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5102
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9755
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 178
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 147
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 143
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "中央上の魔法塔。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "sky_ruins_large"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.48
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 1.0159
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 329
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 180
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 151
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "北東の大型遺跡。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "crystal_shrine_round"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.4968
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9307
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 513
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 155
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 176
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "西側の円形クリスタル神殿。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "crystal_city_ruins"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.4862
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9649
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 672
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 181
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 164
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "南中央のクリスタル遺跡都市。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "east_keep"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5413
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9554
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 857
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 160
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 156
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "東側の砦。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "beacon_outpost_far_east"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.4884
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9587
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 129
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 119
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "東端の小拠点。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "building",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "crystal_watchtower"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "building"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.4891
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9195
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 137
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 137
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 155
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "南東小島の塔。"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "route_object",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "broken_stone_bridge"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "route_object"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 278
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 150
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 71
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "壊れた石橋。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "route_object",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "stone_bridge_southeast"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "route_object"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.4701
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 432
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 134
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 74
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "南東の石橋。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "blue_choco_rider"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "blue"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5077
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 570
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 65
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 74
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "青軍チョコライダー。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "blue_black_mage"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "blue"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 639
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 66
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 71
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "青軍黒魔道士。"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "blue_swordsman_top"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "blue"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.9178
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 709
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 70
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 72
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "青軍剣士。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "blue_swordsman_selected"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "blue"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 783
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 72
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 78
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "青軍選択中剣士。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "blue_dragoon"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "blue"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 859
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 76
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 77
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "青軍竜騎士。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_knight_north"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 939
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 78
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 90
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_knight_nw"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 64
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 87
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_spearman_ne"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 72
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 59
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 68
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍槍兵。"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_knight_east"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 135
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 63
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 84
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_guard_keep"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 202
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 66
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 76
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_guard_southwest"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 272
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 66
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 85
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_guard_south"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.916
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 342
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 71
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 81
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_guard_lower_east"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 417
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 65
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 80
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_guard_southeast_island"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.917
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 486
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 72
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 79
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "unit",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "red_banner_guard_central_east"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "unit"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "red"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.4853
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.92
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 562
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 68
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 82
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "赤軍旗持ちユニット。"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "ui_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "selection_cursor"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "faction",
+          "type": "string",
+          "value": "neutral"
+        },
+        {
+          "name": "anchor_x_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "anchor_y_norm",
+          "type": "float",
+          "value": 0.5
+        },
+        {
+          "name": "atlas_x",
+          "type": "int",
+          "value": 634
+        },
+        {
+          "name": "atlas_y",
+          "type": "int",
+          "value": 343
+        },
+        {
+          "name": "atlas_w",
+          "type": "int",
+          "value": 64
+        },
+        {
+          "name": "atlas_h",
+          "type": "int",
+          "value": 64
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "選択中ユニット用のカーソル。生成版。"
+        }
+      ]
+    }
+  ]
+}

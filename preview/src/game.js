@@ -31,7 +31,9 @@ const assets = {
   units: image("./assets/units_preview_32.png"),
   battle: image("./assets/battle_mock.png"),
   font: image("./assets/misaki_4x8.png"),
-  fontJp: image("./assets/font_tiles_jp.png")
+  fontJp: image("./assets/font_tiles_jp.png"),
+  smsMap: image("./assets/enhanced/sms_skylands_sample_map.png"),
+  smsSprites: image("./assets/enhanced/sms_skylands_sprites_atlas.png")
 };
 const fontCache = new Map();
 const JP_FONT_CHARS = "時刻資金部隊混沌味方敵戦魔法待機退却詠唱回復行動接触指揮勝利敗北撤前衛後白黒剣士騎道う失敗防御選択攻撃";
@@ -252,6 +254,13 @@ function drawHud(game) {
 }
 
 function drawRouteMap(game) {
+  if (assets.smsMap.complete && assets.smsMap.naturalWidth) {
+    ctx.drawImage(assets.smsMap, 0, 10, 512, 246, 0, FIELD_TOP, 256, UI_TOP - FIELD_TOP);
+    const nodes = [[70, 90], [116, 81], [191, 96]];
+    const [cx, cy] = nodes[game.selectedNode];
+    drawCursor(cx - 12, cy - 10);
+    return;
+  }
   sky();
   island(14, 48, 220, 68);
   path([[31, 101], [72, 84], [115, 92], [155, 65], [211, 76]], COLORS.gold);

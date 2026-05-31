@@ -1,0 +1,214 @@
+{
+  "image": "sky_islands_structures_only_atlas.png",
+  "sprites": [
+    {
+      "id": 0,
+      "name": "castle_northwest_structure_only",
+      "category": "building_structure_only",
+      "width": 164,
+      "height": 128,
+      "source_box": [
+        150,
+        84,
+        320,
+        228
+      ],
+      "source_trim": [
+        2,
+        0,
+        166,
+        128
+      ],
+      "individual_image": "structures_only/00_castle_northwest_structure_only.png",
+      "atlas_frame": {
+        "x": 4,
+        "y": 4,
+        "w": 164,
+        "h": 128
+      }
+    },
+    {
+      "id": 1,
+      "name": "arcane_tower_structure_only",
+      "category": "building_structure_only",
+      "width": 142,
+      "height": 140,
+      "source_box": [
+        590,
+        72,
+        752,
+        222
+      ],
+      "source_trim": [
+        9,
+        0,
+        151,
+        140
+      ],
+      "individual_image": "structures_only/01_arcane_tower_structure_only.png",
+      "atlas_frame": {
+        "x": 172,
+        "y": 4,
+        "w": 142,
+        "h": 140
+      }
+    },
+    {
+      "id": 2,
+      "name": "sky_ruins_large_structure_only",
+      "category": "building_structure_only",
+      "width": 175,
+      "height": 145,
+      "source_box": [
+        955,
+        66,
+        1150,
+        236
+      ],
+      "source_trim": [
+        19,
+        6,
+        194,
+        151
+      ],
+      "individual_image": "structures_only/02_sky_ruins_large_structure_only.png",
+      "atlas_frame": {
+        "x": 318,
+        "y": 4,
+        "w": 175,
+        "h": 145
+      }
+    },
+    {
+      "id": 3,
+      "name": "crystal_shrine_round_structure_only",
+      "category": "building_structure_only",
+      "width": 150,
+      "height": 173,
+      "source_box": [
+        54,
+        292,
+        220,
+        474
+      ],
+      "source_trim": [
+        9,
+        1,
+        159,
+        174
+      ],
+      "individual_image": "structures_only/03_crystal_shrine_round_structure_only.png",
+      "atlas_frame": {
+        "x": 497,
+        "y": 4,
+        "w": 150,
+        "h": 173
+      }
+    },
+    {
+      "id": 4,
+      "name": "crystal_city_ruins_structure_only",
+      "category": "building_structure_only",
+      "width": 176,
+      "height": 134,
+      "source_box": [
+        432,
+        358,
+        626,
+        530
+      ],
+      "source_trim": [
+        12,
+        28,
+        188,
+        162
+      ],
+      "individual_image": "structures_only/04_crystal_city_ruins_structure_only.png",
+      "atlas_frame": {
+        "x": 651,
+        "y": 4,
+        "w": 176,
+        "h": 134
+      }
+    },
+    {
+      "id": 5,
+      "name": "east_keep_structure_only",
+      "category": "building_structure_only",
+      "width": 152,
+      "height": 151,
+      "source_box": [
+        1060,
+        300,
+        1240,
+        462
+      ],
+      "source_trim": [
+        12,
+        2,
+        164,
+        153
+      ],
+      "individual_image": "structures_only/05_east_keep_structure_only.png",
+      "atlas_frame": {
+        "x": 831,
+        "y": 4,
+        "w": 152,
+        "h": 151
+      }
+    },
+    {
+      "id": 6,
+      "name": "beacon_outpost_far_east_structure_only",
+      "category": "building_structure_only",
+      "width": 118,
+      "height": 116,
+      "source_box": [
+        1360,
+        96,
+        1500,
+        220
+      ],
+      "source_trim": [
+        11,
+        1,
+        129,
+        117
+      ],
+      "individual_image": "structures_only/06_beacon_outpost_far_east_structure_only.png",
+      "atlas_frame": {
+        "x": 4,
+        "y": 181,
+        "w": 118,
+        "h": 116
+      }
+    },
+    {
+      "id": 7,
+      "name": "crystal_watchtower_structure_only",
+      "category": "building_structure_only",
+      "width": 120,
+      "height": 154,
+      "source_box": [
+        1350,
+        392,
+        1498,
+        548
+      ],
+      "source_trim": [
+        18,
+        2,
+        138,
+        156
+      ],
+      "individual_image": "structures_only/07_crystal_watchtower_structure_only.png",
+      "atlas_frame": {
+        "x": 126,
+        "y": 181,
+        "w": 120,
+        "h": 154
+      }
+    }
+  ],
+  "notes": "土台や地形をできるだけ除いた建物構造物寄りのstrict版。"
+}

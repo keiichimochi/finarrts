@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>NEOFAMI v0.2 - 16-Color Sprite Demo</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 32px;
+    background: linear-gradient(90deg, #ff0080, #ff8c00, #ffd700, #00ff88);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 4px;
+    letter-spacing: 4px;
+  }
+  .subtitle {
+    color: #888;
+    font-size: 11px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  .version-badge {
+    display: inline-block;
+    background: #00ff88;
+    color: #000;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 3px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  .console {
+    background: #2a1a1a;
+    border: 8px solid #1a0a0a;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 10px 40px rgba(255, 0, 128, 0.3),
+                inset 0 0 20px rgba(0,0,0,0.5);
+  }
+  .screen-frame {
+    background: #000;
+    border: 4px solid #333;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  canvas {
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 512px;
+    height: 480px;
+    background: #000;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+    font-size: 10px;
+  }
+  .stat {
+    background: #111;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #ff0080;
+  }
+  .stat-label { color: #888; font-size: 9px; }
+  .stat-value { color: #0f0; font-weight: bold; font-size: 13px; }
+
+  .palette-strip {
+    display: flex;
+    gap: 2px;
+    margin-top: 12px;
+    background: #111;
+    padding: 8px;
+    border-radius: 4px;
+    align-items: center;
+  }
+  .palette-label {
+    color: #888;
+    font-size: 10px;
+    margin-right: 8px;
+    letter-spacing: 1px;
+  }
+  .swatch {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #333;
+    border-radius: 2px;
+  }
+  .swatch.transparent {
+    background: repeating-conic-gradient(#444 0% 25%, #222 0% 50%) 50% / 6px 6px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+  }
+  button {
+    background: #ff0080;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: all .2s;
+  }
+  button:hover { background: #ff4da6; transform: translateY(-2px); }
+  button.active { background: #0f0; color: #000; }
+  button.secondary { background: #444; }
+  button.secondary:hover { background: #666; }
+
+  .info {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 16px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .info h3 {
+    color: #00ff88;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+  .info code {
+    background: #000;
+    color: #0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  .key-hint {
+    margin-top: 10px;
+    color: #666;
+    font-size: 11px;
+    text-align: center;
+  }
+  .compare-table {
+    margin-top: 12px;
+    font-size: 11px;
+    width: 100%;
+  }
+  .compare-table th, .compare-table td {
+    padding: 4px 8px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+  .compare-table th { color: #00ff88; }
+</style>
+</head>
+<body>
+
+<h1>NEOFAMI<span class="version-badge">v0.2 / 16-COLOR</span></h1>
+<div class="subtitle">▼ SMS-STYLE PER-SPRITE 16-COLOR PALETTE ▼</div>
+
+<div class="console">
+  <div class="screen-frame">
+    <canvas id="screen" width="256" height="240"></canvas>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-label">FPS</div>
+      <div class="stat-value" id="fps">120</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">SPRITES</div>
+      <div class="stat-value" id="spriteCount">1</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">GFX MODE</div>
+      <div class="stat-value" id="modeLabel">SMS+</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">COLORS/SP</div>
+      <div class="stat-value" id="colorPerSprite">16</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">PLAYER PAL</div>
+      <div class="stat-value" id="palName">RED</div>
+    </div>
+  </div>
+  <div class="palette-strip">
+    <span class="palette-label">PLAYER PALETTE ▶</span>
+    <div id="paletteDisplay" style="display:flex; gap:2px;"></div>
+  </div>
+</div>
+
+<div class="controls">
+  <button id="btnSpawn">SPAWN 50 NINJA</button>
+  <button id="btnCyclePal">▶ CYCLE PLAYER COLOR</button>
+  <button id="btnGfxMode" class="active">SMS+ MODE</button>
+  <button id="btnRetro">RETRO LOCK</button>
+  <button id="btnCRT" class="active">CRT FILTER</button>
+  <button id="btnSound" class="secondary">♪ APU SOUND</button>
+  <button id="btnClear" class="secondary">CLEAR</button>
+</div>
+
+<div class="key-hint">← → ↑ ↓ / SPACE で移動・ジャンプ  |  C でパレット切替</div>
+
+<div class="info">
+  <h3>▶ WHAT'S NEW IN v0.2</h3>
+  <table class="compare-table">
+    <tr><th>項目</th><th>v0.1 (NES風)</th><th>v0.2 (SMS+風)</th></tr>
+    <tr><td>スプライトサイズ</td><td>8×8</td><td>16×16</td></tr>
+    <tr><td>1スプライトの色数</td><td>4色（透明含む）</td><td><span style="color:#0f0">16色（透明含む）</span></td></tr>
+    <tr><td>パレット数</td><td>共有4個まで</td><td><span style="color:#0f0">無制限・各スプライト独自</span></td></tr>
+    <tr><td>表現可能なディテール</td><td>シルエット中心</td><td>陰影・装飾・金属感</td></tr>
+  </table>
+  <br>
+  ▶ <code>SPAWN 50 NINJA</code> で50体出すと、全員 <strong>違う16色パレット</strong> でレンダリングされるナリ！<br>
+  ▶ <code>CYCLE PLAYER COLOR</code> でプレイヤーのパレットを6種類で切替（赤侍・緑忍者・紫忍・金マスター・影忍・氷忍）<br>
+  ▶ <code>SMS+ MODE</code> OFFにすると 4色制限の旧NES風に退化させて差を実感できるナリ
+</div>
+
+<script>
+//===========================================================
+// NEOFAMI v0.2 - 16-Color Per-Sprite Palette System
+//===========================================================
+
+const canvas = document.getElementById('screen');
+const ctx = canvas.getContext('2d');
+const W = 256, H = 240;
+const pixelBuffer = ctx.createImageData(W, H);
+
+// 拡張マスターパレット（NES 54色 + SMS 64色 + 自由色）
+// hex直接指定可能
+function hexToRGB(hex) {
+  return [
+    parseInt(hex.slice(1,3),16),
+    parseInt(hex.slice(3,5),16),
+    parseInt(hex.slice(5,7),16)
+  ];
+}
+
+function setPixelHex(x, y, hex) {
+  if (x < 0 || x >= W || y < 0 || y >= H) return;
+  const i = (y * W + x) * 4;
+  pixelBuffer.data[i]   = parseInt(hex.slice(1,3),16);
+  pixelBuffer.data[i+1] = parseInt(hex.slice(3,5),16);
+  pixelBuffer.data[i+2] = parseInt(hex.slice(5,7),16);
+  pixelBuffer.data[i+3] = 255;
+}
+
+//-----------------------------------------------------------
+// 16色 忍者スプライトデータ（16×16）
+// 各セルは 0-F (16進) でパレットインデックス
+//-----------------------------------------------------------
+const NINJA_HEX_16 = [
+  "0000066666600000",  // 0  プラム上
+  "0000677777760000",  // 1  プラム本体
+  "0004444444444000",  // 2  兜リム
+  "004D44444444D400",  // 3  金スタッド
+  "0042112222112400",  // 4  額・スキンハイライト
+  "0042145225412400",  // 5  目（白＋黒）
+  "0042244224422400",  // 6  頬
+  "0004222222224000",  // 7  顎
+  "0004444334444000",  // 8  首陰影
+  "0089AA9999AA9800",  // 9  肩アーマー
+  "089AAA9779AAA980",  // 10 胴・赤帯入り
+  "089AA976679AA980",  // 11 胴中央赤
+  "08999DDDDDD99980",  // 12 金ベルト
+  "0889999999999880",  // 13 下半身
+  "000EEF0000FEE000",  // 14 ブーツ
+  "000FFF0000FFF000",  // 15 ブーツ陰
+];
+
+//-----------------------------------------------------------
+// 6種類のパレットプリセット（各16色）
+// インデックス0は透明、1-15が表示色
+//-----------------------------------------------------------
+const PALETTE_PRESETS = [
+  { name: 'RED', colors: [
+    null,'#FCE0A8','#F8B878','#C07840','#1A0814','#FCFCFC',
+    '#F83800','#A80020','#001080','#0058F8','#5CBCFC',
+    '#888888','#404040','#FCB800','#583000','#281800'
+  ]},
+  { name: 'GREEN', colors: [
+    null,'#FCE0A8','#F8B878','#C07840','#1A0814','#FCFCFC',
+    '#58D854','#187818','#503000','#A07020','#D8B070',
+    '#888888','#404040','#FCB800','#281800','#100800'
+  ]},
+  { name: 'PURPLE', colors: [
+    null,'#FCE0A8','#F8B878','#C07840','#1A0814','#FCFCFC',
+    '#D870F8','#7820A0','#A0A0B0','#7878A8','#D8D8E0',
+    '#888888','#404040','#FCB800','#583000','#281800'
+  ]},
+  { name: 'GOLD', colors: [
+    null,'#FCE0A8','#F8B878','#C07840','#1A0814','#FCFCFC',
+    '#FCD800','#A07000','#583000','#FCB800','#FCE048',
+    '#888888','#404040','#FCD800','#583000','#281800'
+  ]},
+  { name: 'SHADOW', colors: [
+    null,'#A0A0A0','#707070','#404040','#000000','#FCFCFC',
+    '#A80020','#580010','#101018','#303040','#505068',
+    '#404040','#181818','#A0A0A0','#181818','#000000'
+  ]},
+  { name: 'ICE', colors: [
+    null,'#FCE0A8','#F8B878','#C07840','#1A0814','#FCFCFC',
+    '#5CBCFC','#0058F8','#A0E0FC','#3CBCFC','#FFFFFF',
+    '#A0E0FC','#5070A0','#FCFCFC','#5070A0','#203050'
+  ]},
+];
+
+//-----------------------------------------------------------
+// 旧NES風 4色8x8スプライト（比較用）
+//-----------------------------------------------------------
+const NINJA_TILE_4 = [
+  [0,0,1,1,1,1,0,0],
+  [0,1,1,1,1,1,1,0],
+  [0,1,2,1,1,2,1,0],
+  [0,1,1,1,1,1,1,0],
+  [0,3,3,3,3,3,3,0],
+  [0,3,3,3,3,3,3,0],
+  [0,3,0,0,0,0,3,0],
+  [0,3,0,0,0,0,3,0],
+];
+const NINJA_PAL_4 = [null,'#1A0814','#F8B878','#0058F8'];
+
+//-----------------------------------------------------------
+// 描画関数
+//-----------------------------------------------------------
+function drawSprite16(x, y, flipX, palette) {
+  for (let ty=0; ty<16; ty++) {
+    const row = NINJA_HEX_16[ty];
+    for (let tx=0; tx<16; tx++) {
+      const ch = row[flipX ? 15-tx : tx];
+      const idx = parseInt(ch, 16);
+      if (idx === 0) continue;
+      const c = palette[idx];
+      if (!c) continue;
+      setPixelHex(x|0+tx, (y|0)+ty, c);
+      // setPixelHexのx座標バグ修正
+      const px = (x|0) + tx;
+      const py = (y|0) + ty;
+      if (px < 0 || px >= W || py < 0 || py >= H) continue;
+      const bi = (py * W + px) * 4;
+      pixelBuffer.data[bi]   = parseInt(c.slice(1,3),16);
+      pixelBuffer.data[bi+1] = parseInt(c.slice(3,5),16);
+      pixelBuffer.data[bi+2] = parseInt(c.slice(5,7),16);
+      pixelBuffer.data[bi+3] = 255;
+    }
+  }
+}
+
+function drawSprite4(x, y, flipX, palette) {
+  for (let ty=0; ty<8; ty++) {
+    for (let tx=0; tx<8; tx++) {
+      const p = NINJA_TILE_4[ty][flipX ? 7-tx : tx];
+      if (p === 0) continue;
+      const c = palette[p];
+      if (!c) continue;
+      const px = (x|0) + tx;
+      const py = (y|0) + ty;
+      if (px < 0 || px >= W || py < 0 || py >= H) continue;
+      const bi = (py * W + px) * 4;
+      pixelBuffer.data[bi]   = parseInt(c.slice(1,3),16);
+      pixelBuffer.data[bi+1] = parseInt(c.slice(3,5),16);
+      pixelBuffer.data[bi+2] = parseInt(c.slice(5,7),16);
+      pixelBuffer.data[bi+3] = 255;
+    }
+  }
+}
+
+//-----------------------------------------------------------
+// BG描画（少し豪華に）
+//-----------------------------------------------------------
+function drawBG(scrollX) {
+  // 空グラデーション（多段）
+  for (let y=0; y<160; y++) {
+    let hex;
+    if (y < 40)       hex = '#1830A0';      // 上空 深い青
+    else if (y < 80)  hex = '#3858C8';
+    else if (y < 110) hex = '#6088E8';
+    else if (y < 140) hex = '#9CB8F0';
+    else              hex = '#C8D8F8';      // 地平線
+    for (let x=0; x<W; x++) setPixelHex(x, y, hex);
+  }
+
+  // 星（上空）
+  for (let i=0; i<20; i++) {
+    const sx = ((i*37 - scrollX*0.1) % W + W) % W;
+    const sy = (i*13) % 35;
+    setPixelHex(sx|0, sy|0, '#FCFCFC');
+  }
+
+  // 雲（パララックス）
+  for (let i=0; i<6; i++) {
+    const cx = ((i*60 - scrollX*0.3) % (W+40) + (W+40)) % (W+40) - 20;
+    for (let dy=0; dy<6; dy++) for (let dx=0; dx<20; dx++) {
+      if ((dx+dy)%3 !== 0) setPixelHex(cx+dx-10, 35+i*12+dy, '#FCFCFC');
+    }
+  }
+
+  // 遠山（紫）
+  for (let i=0; i<10; i++) {
+    const mx = ((i*30 - scrollX*0.5) % (W+60) + (W+60)) % (W+60) - 30;
+    for (let h=0; h<25; h++) {
+      for (let w=-h; w<=h; w++) {
+        setPixelHex(mx+w, 145-h, '#785088');
+      }
+    }
+  }
+
+  // 中景山（緑）
+  for (let i=0; i<8; i++) {
+    const mx = ((i*48 - scrollX*0.75) % (W+80) + (W+80)) % (W+80) - 40;
+    for (let h=0; h<35; h++) {
+      for (let w=-h; w<=h; w++) {
+        const hex = h < 5 ? '#88C868' : '#388838';
+        setPixelHex(mx+w, 160-h, hex);
+      }
+    }
+  }
+
+  // 地面（タイル）
+  for (let y=160; y<H; y++) {
+    for (let x=0; x<W; x++) {
+      const tilex = ((x + scrollX) >> 3) & 0xff;
+      const tileY = (y - 160) >> 3;
+      const checker = (tilex + tileY) % 2 === 0;
+      let hex;
+      if (y < 168)      hex = checker ? '#388838' : '#508848'; // 草表面
+      else if (y < 180) hex = checker ? '#785030' : '#604020'; // 土上層
+      else              hex = checker ? '#503018' : '#382010'; // 土下層
+      setPixelHex(x, y, hex);
+    }
+  }
+
+  // 草のディテール
+  for (let x=0; x<W; x+=3) {
+    const xx = ((x - scrollX) % W + W) % W;
+    setPixelHex(xx, 159, '#A0E060');
+    setPixelHex(xx+1, 158, '#88C040');
+  }
+}
+
+//===========================================================
+// ゲームステート
+//===========================================================
+const state = {
+  player: { x: 120, y: 132, vy: 0, dir: 1, jumping: false, palIdx: 0 },
+  ninjas: [],
+  scrollX: 0,
+  frame: 0,
+  fps: 120,
+  retroLock: false,
+  crtFilter: true,
+  smsMode: true,
+  soundOn: false,
+  keys: {},
+};
+
+function spawnNinjas(count) {
+  for (let i=0; i<count; i++) {
+    state.ninjas.push({
+      x: Math.random()*W,
+      y: Math.random()*120 + 20,
+      vx: (Math.random()-0.5)*1.5,
+      vy: (Math.random()-0.5)*1.5,
+      dir: Math.random() < 0.5 ? -1 : 1,
+      palIdx: Math.floor(Math.random()*PALETTE_PRESETS.length),
+    });
+  }
+}
+
+// 入力
+window.addEventListener('keydown', e => {
+  state.keys[e.key.toLowerCase()] = true;
+  if (e.key.toLowerCase() === 'c') cyclePlayerPalette();
+  if (['arrowup','arrowdown','arrowleft','arrowright',' '].includes(e.key.toLowerCase())) e.preventDefault();
+});
+window.addEventListener('keyup', e => state.keys[e.key.toLowerCase()] = false);
+
+function update(dt) {
+  const p = state.player;
+  const k = state.keys;
+  const speed = 1.4;
+  if (k['arrowleft']) { p.x -= speed; p.dir = -1; }
+  if (k['arrowright']) { p.x += speed; p.dir = 1; }
+  if ((k[' '] || k['arrowup']) && !p.jumping) {
+    p.vy = -4.2;
+    p.jumping = true;
+  }
+  p.vy += 0.2;
+  p.y += p.vy;
+  const groundY = state.smsMode ? 132 : 140;
+  if (p.y >= groundY) { p.y = groundY; p.vy = 0; p.jumping = false; }
+
+  if (p.x > 160) { state.scrollX += (p.x - 160) * 0.5; p.x = 160; }
+  if (p.x < 80)  { state.scrollX += (p.x - 80) * 0.5;  p.x = 80; }
+
+  for (const n of state.ninjas) {
+    n.x += n.vx;
+    n.y += n.vy;
+    if (n.x < 0 || n.x > W-16) n.vx *= -1;
+    if (n.y < 10 || n.y > 140) n.vy *= -1;
+  }
+  state.frame++;
+}
+
+function render() {
+  pixelBuffer.data.fill(0);
+  drawBG(state.scrollX);
+
+  const allSprites = [
+    ...state.ninjas.map(n => ({ x: n.x|0, y: n.y|0, dir: n.dir, palIdx: n.palIdx })),
+    { x: state.player.x|0, y: state.player.y|0, dir: state.player.dir, palIdx: state.player.palIdx, isPlayer: true }
+  ];
+
+  let visibleCount = 0;
+  const spriteSize = state.smsMode ? 16 : 8;
+
+  if (state.retroLock) {
+    const scanlineCount = new Array(H).fill(0);
+    for (const s of allSprites) {
+      let canDraw = true;
+      for (let dy=0; dy<spriteSize; dy++) {
+        if (scanlineCount[s.y+dy] >= 8) { canDraw = false; break; }
+      }
+      if (canDraw) {
+        const pal = PALETTE_PRESETS[s.palIdx].colors;
+        if (state.smsMode) drawSprite16(s.x, s.y, s.dir < 0, pal);
+        else drawSprite4(s.x, s.y, s.dir < 0, pal);
+        visibleCount++;
+        for (let dy=0; dy<spriteSize; dy++) scanlineCount[s.y+dy]++;
+      }
+    }
+  } else {
+    for (const s of allSprites) {
+      const pal = PALETTE_PRESETS[s.palIdx].colors;
+      if (state.smsMode) drawSprite16(s.x, s.y, s.dir < 0, pal);
+      else drawSprite4(s.x, s.y, s.dir < 0, pal);
+    }
+    visibleCount = allSprites.length;
+  }
+
+  ctx.putImageData(pixelBuffer, 0, 0);
+
+  if (state.crtFilter) {
+    ctx.fillStyle = 'rgba(0,0,0,0.22)';
+    for (let y=0; y<H; y+=2) ctx.fillRect(0, y, W, 1);
+    const g = ctx.createRadialGradient(W/2, H/2, 60, W/2, H/2, 180);
+    g.addColorStop(0, 'rgba(0,0,0,0)');
+    g.addColorStop(1, 'rgba(0,0,0,0.55)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,W,H);
+  }
+
+  document.getElementById('spriteCount').textContent = visibleCount + '/' + allSprites.length;
+}
+
+//===========================================================
+// パレット表示
+//===========================================================
+function updatePaletteDisplay() {
+  const pal = PALETTE_PRESETS[state.player.palIdx];
+  const disp = document.getElementById('paletteDisplay');
+  disp.innerHTML = '';
+  pal.colors.forEach((c, i) => {
+    const sw = document.createElement('div');
+    sw.className = 'swatch' + (c === null ? ' transparent' : '');
+    if (c) sw.style.background = c;
+    sw.title = i + ': ' + (c || 'transparent');
+    disp.appendChild(sw);
+  });
+  document.getElementById('palName').textContent = pal.name;
+}
+
+function cyclePlayerPalette() {
+  state.player.palIdx = (state.player.palIdx + 1) % PALETTE_PRESETS.length;
+  updatePaletteDisplay();
+}
+
+//===========================================================
+// 120FPSループ
+//===========================================================
+let lastTime = performance.now();
+let fpsAcc = 0, fpsFrames = 0;
+function loop(now) {
+  const dt = now - lastTime;
+  lastTime = now;
+  fpsAcc += dt; fpsFrames++;
+  if (fpsAcc >= 500) {
+    state.fps = (1000 / (fpsAcc/fpsFrames)) | 0;
+    document.getElementById('fps').textContent = state.fps;
+    fpsAcc = 0; fpsFrames = 0;
+  }
+  update(dt);
+  render();
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+//===========================================================
+// APUサウンド
+//===========================================================
+let audioCtx = null;
+let pulseOsc1, pulseGain1;
+let musicInterval = null;
+
+function startSound() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const notes = [523, 659, 784, 659, 523, 659, 784, 1047, 784, 659, 523, 659, 784, 659, 523, 440];
+  let step = 0;
+  pulseGain1 = audioCtx.createGain();
+  pulseGain1.gain.value = 0.05;
+  pulseGain1.connect(audioCtx.destination);
+  pulseOsc1 = audioCtx.createOscillator();
+  pulseOsc1.type = 'square';
+  pulseOsc1.frequency.value = notes[0];
+  pulseOsc1.connect(pulseGain1);
+  pulseOsc1.start();
+  musicInterval = setInterval(() => {
+    step = (step + 1) % notes.length;
+    pulseOsc1.frequency.setValueAtTime(notes[step], audioCtx.currentTime);
+  }, 200);
+}
+function stopSound() {
+  if (!audioCtx) return;
+  clearInterval(musicInterval);
+  pulseOsc1.stop();
+  audioCtx.close();
+  audioCtx = null;
+}
+
+//===========================================================
+// UIボタン
+//===========================================================
+document.getElementById('btnSpawn').onclick = () => spawnNinjas(50);
+document.getElementById('btnCyclePal').onclick = cyclePlayerPalette;
+document.getElementById('btnClear').onclick = () => state.ninjas = [];
+document.getElementById('btnRetro').onclick = (e) => {
+  state.retroLock = !state.retroLock;
+  e.target.classList.toggle('active', state.retroLock);
+};
+document.getElementById('btnGfxMode').onclick = (e) => {
+  state.smsMode = !state.smsMode;
+  e.target.classList.toggle('active', state.smsMode);
+  e.target.textContent = state.smsMode ? 'SMS+ MODE' : 'NES MODE';
+  document.getElementById('modeLabel').textContent = state.smsMode ? 'SMS+' : 'NES';
+  document.getElementById('colorPerSprite').textContent = state.smsMode ? '16' : '4';
+};
+document.getElementById('btnCRT').onclick = (e) => {
+  state.crtFilter = !state.crtFilter;
+  e.target.classList.toggle('active', state.crtFilter);
+};
+document.getElementById('btnSound').onclick = (e) => {
+  state.soundOn = !state.soundOn;
+  e.target.classList.toggle('active', state.soundOn);
+  state.soundOn ? startSound() : stopSound();
+};
+
+// 初期化
+updatePaletteDisplay();
+
+</script>
+</body>
+</html>

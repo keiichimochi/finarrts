@@ -79,7 +79,7 @@ export class SkyfrontBattleScene {
   }
 
   render(gfx: Gfx): void {
-    gfx.setPalette("nes");
+    gfx.setPalette("extended");
     gfx.clear(1);
     if (this.mode === "map") {
       this.renderRouteMap(gfx);
@@ -235,7 +235,7 @@ export class SkyfrontBattleScene {
 
   private renderRouteMap(gfx: Gfx): void {
     gfx.setLayer(0);
-    gfx.drawTile("bg_route_sky", 0, 14);
+    gfx.drawTile("sms_skylands_route_map", 0, 14);
     gfx.setLayer(2);
     gfx.drawTile("route_island", 12, 32);
     gfx.drawTile("route_path", 42, 84);

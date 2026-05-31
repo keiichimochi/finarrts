@@ -1,0 +1,2518 @@
+{
+  "type": "tileset",
+  "tiledversion": "1.10.2",
+  "version": "1.10",
+  "name": "sky_islands_reusable_terrain_64",
+  "tilewidth": 64,
+  "tileheight": 64,
+  "spacing": 0,
+  "margin": 0,
+  "columns": 16,
+  "tilecount": 54,
+  "image": "sky_islands_reusable_terrain_tileset_64.png",
+  "imagewidth": 1024,
+  "imageheight": 256,
+  "tiles": [
+    {
+      "id": 0,
+      "type": "sky",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "sky_void"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 999.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "空中/落下扱い。"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "grass",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_light_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "grass",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_mid_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "grass",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_dark_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.1
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "forest",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "forest_dense_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "forest"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "mountain",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_base_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 3.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "山地。歩行不可設定。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "mountain",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_peak_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 4.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "高山。歩行不可設定。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "stone",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "ruins_stone_floor_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "stone"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "dirt",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "dirt_plain_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "dirt"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "cliff",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_face_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 999.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "崖面。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "stone_crystal",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "crystal_stone_floor_seamless"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "stone_crystal"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "none",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "transparent_blank"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明タイル。"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0000_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0001_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0010_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0011_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0100_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0101_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0110_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_0111_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1000_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1001_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1010_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1011_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1100_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1101_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1110_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "island_edge",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_edge_missing_1111_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "island_edge"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 1.2
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "base"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0000_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0001_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0010_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0011_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0100_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0101_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0110_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_0111_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1000_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1001_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1010_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1011_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1100_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1101_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1110_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_overlay_1111_NESW"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_diag_ne_sw_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "斜め道 NE-SW。透明背景。"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "type": "path_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_diag_nw_se_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "path_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.8
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "斜め道 NW-SE。透明背景。"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "type": "bridge_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_horizontal_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.7
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "水平橋。透明背景。"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "type": "bridge_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_vertical_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.7
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "垂直橋。透明背景。"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "bridge_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_diag_ne_sw_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.7
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "斜め橋 NE-SW。透明背景。"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "type": "bridge_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_diag_nw_se_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.7
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "斜め橋 NW-SE。透明背景。"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "type": "ui_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "move_cursor_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "選択・目的地などのUIオーバーレイ。"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "type": "ui_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "target_marker_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "選択・目的地などのUIオーバーレイ。"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "type": "ui_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "magic_node_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "選択・目的地などのUIオーバーレイ。"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "type": "ui_overlay",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "camp_marker_overlay"
+        },
+        {
+          "name": "terrain_type",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "float",
+          "value": 0.0
+        },
+        {
+          "name": "layer",
+          "type": "string",
+          "value": "overlay"
+        },
+        {
+          "name": "seamless",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "collision",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "value": "選択・目的地などのUIオーバーレイ。"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "name": "source",
+      "type": "string",
+      "value": "generated_from_uploaded_mock_game_screenshot"
+    },
+    {
+      "name": "tile_size",
+      "type": "int",
+      "value": 64
+    },
+    {
+      "name": "usage",
+      "type": "string",
+      "value": "base terrain + transparent overlay route/marker tiles"
+    }
+  ]
+}

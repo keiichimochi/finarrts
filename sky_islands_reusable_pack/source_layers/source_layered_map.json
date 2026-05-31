@@ -1,0 +1,444 @@
+{
+  "source_image": "final-fantasy-rts-mmc5-rts (1).jpeg",
+  "field_rect": [
+    0,
+    58,
+    1536,
+    650
+  ],
+  "terrain_clean_image": "source_layers/source_field_ground_clean_inpainted.png",
+  "masks": {
+    "objects": "source_layers/objects_mask.png",
+    "units": "source_layers/units_mask.png",
+    "route_objects": "source_layers/route_objects_mask.png",
+    "combined": "source_layers/combined_sprite_mask.png"
+  },
+  "instances": [
+    {
+      "sprite_id": 0,
+      "sprite_name": "castle_northwest",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        150,
+        84,
+        320,
+        228
+      ],
+      "anchor_world_px": [
+        235.0,
+        213.6
+      ],
+      "z_order": 228
+    },
+    {
+      "sprite_id": 1,
+      "sprite_name": "arcane_tower",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        590,
+        72,
+        752,
+        222
+      ],
+      "anchor_world_px": [
+        671.0,
+        211.5
+      ],
+      "z_order": 222
+    },
+    {
+      "sprite_id": 2,
+      "sprite_name": "sky_ruins_large",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        955,
+        66,
+        1150,
+        236
+      ],
+      "anchor_world_px": [
+        1056.4,
+        222.4
+      ],
+      "z_order": 236
+    },
+    {
+      "sprite_id": 3,
+      "sprite_name": "crystal_shrine_round",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        54,
+        292,
+        220,
+        474
+      ],
+      "anchor_world_px": [
+        137.0,
+        455.8
+      ],
+      "z_order": 474
+    },
+    {
+      "sprite_id": 4,
+      "sprite_name": "crystal_city_ruins",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        432,
+        358,
+        626,
+        530
+      ],
+      "anchor_world_px": [
+        529.0,
+        516.24
+      ],
+      "z_order": 530
+    },
+    {
+      "sprite_id": 5,
+      "sprite_name": "east_keep",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        1060,
+        300,
+        1240,
+        462
+      ],
+      "anchor_world_px": [
+        1153.6,
+        449.04
+      ],
+      "z_order": 462
+    },
+    {
+      "sprite_id": 6,
+      "sprite_name": "beacon_outpost_far_east",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        1360,
+        96,
+        1500,
+        220
+      ],
+      "anchor_world_px": [
+        1430.0,
+        210.08
+      ],
+      "z_order": 220
+    },
+    {
+      "sprite_id": 7,
+      "sprite_name": "crystal_watchtower",
+      "category": "building",
+      "faction": "neutral",
+      "source_box": [
+        1350,
+        392,
+        1498,
+        548
+      ],
+      "anchor_world_px": [
+        1424.0,
+        535.52
+      ],
+      "z_order": 548
+    },
+    {
+      "sprite_id": 8,
+      "sprite_name": "broken_stone_bridge",
+      "category": "route_object",
+      "faction": "neutral",
+      "source_box": [
+        970,
+        405,
+        1120,
+        476
+      ],
+      "anchor_world_px": [
+        1045.0,
+        461.8
+      ],
+      "z_order": 476
+    },
+    {
+      "sprite_id": 9,
+      "sprite_name": "stone_bridge_southeast",
+      "category": "route_object",
+      "faction": "neutral",
+      "source_box": [
+        1218,
+        520,
+        1368,
+        594
+      ],
+      "anchor_world_px": [
+        1293.0,
+        579.2
+      ],
+      "z_order": 594
+    },
+    {
+      "sprite_id": 10,
+      "sprite_name": "blue_choco_rider",
+      "category": "unit",
+      "faction": "blue",
+      "source_box": [
+        698,
+        218,
+        764,
+        292
+      ],
+      "anchor_world_px": [
+        731.0,
+        286.08
+      ],
+      "z_order": 292
+    },
+    {
+      "sprite_id": 11,
+      "sprite_name": "blue_black_mage",
+      "category": "unit",
+      "faction": "blue",
+      "source_box": [
+        570,
+        257,
+        636,
+        328
+      ],
+      "anchor_world_px": [
+        603.0,
+        322.32
+      ],
+      "z_order": 328
+    },
+    {
+      "sprite_id": 12,
+      "sprite_name": "blue_swordsman_top",
+      "category": "unit",
+      "faction": "blue",
+      "source_box": [
+        630,
+        248,
+        700,
+        322
+      ],
+      "anchor_world_px": [
+        665.0,
+        316.08
+      ],
+      "z_order": 322
+    },
+    {
+      "sprite_id": 13,
+      "sprite_name": "blue_swordsman_selected",
+      "category": "unit",
+      "faction": "blue",
+      "source_box": [
+        632,
+        304,
+        704,
+        382
+      ],
+      "anchor_world_px": [
+        668.0,
+        375.76
+      ],
+      "z_order": 382
+    },
+    {
+      "sprite_id": 14,
+      "sprite_name": "blue_dragoon",
+      "category": "unit",
+      "faction": "blue",
+      "source_box": [
+        748,
+        295,
+        824,
+        372
+      ],
+      "anchor_world_px": [
+        786.0,
+        365.84
+      ],
+      "z_order": 372
+    },
+    {
+      "sprite_id": 15,
+      "sprite_name": "red_banner_knight_north",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        806,
+        78,
+        884,
+        168
+      ],
+      "anchor_world_px": [
+        845.0,
+        160.8
+      ],
+      "z_order": 168
+    },
+    {
+      "sprite_id": 16,
+      "sprite_name": "red_banner_knight_nw",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        300,
+        145,
+        364,
+        232
+      ],
+      "anchor_world_px": [
+        332.0,
+        225.04
+      ],
+      "z_order": 232
+    },
+    {
+      "sprite_id": 17,
+      "sprite_name": "red_spearman_ne",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        1005,
+        214,
+        1064,
+        282
+      ],
+      "anchor_world_px": [
+        1034.5,
+        276.56
+      ],
+      "z_order": 282
+    },
+    {
+      "sprite_id": 18,
+      "sprite_name": "red_banner_knight_east",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        1205,
+        184,
+        1268,
+        268
+      ],
+      "anchor_world_px": [
+        1236.5,
+        261.28
+      ],
+      "z_order": 268
+    },
+    {
+      "sprite_id": 19,
+      "sprite_name": "red_banner_guard_keep",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        1124,
+        280,
+        1190,
+        356
+      ],
+      "anchor_world_px": [
+        1157.0,
+        349.92
+      ],
+      "z_order": 356
+    },
+    {
+      "sprite_id": 20,
+      "sprite_name": "red_banner_guard_southwest",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        238,
+        467,
+        304,
+        552
+      ],
+      "anchor_world_px": [
+        271.0,
+        545.2
+      ],
+      "z_order": 552
+    },
+    {
+      "sprite_id": 21,
+      "sprite_name": "red_banner_guard_south",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        864,
+        450,
+        935,
+        535
+      ],
+      "anchor_world_px": [
+        899.5,
+        528.2
+      ],
+      "z_order": 535
+    },
+    {
+      "sprite_id": 22,
+      "sprite_name": "red_banner_guard_lower_east",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        1170,
+        386,
+        1235,
+        466
+      ],
+      "anchor_world_px": [
+        1202.5,
+        459.6
+      ],
+      "z_order": 466
+    },
+    {
+      "sprite_id": 23,
+      "sprite_name": "red_banner_guard_southeast_island",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        1152,
+        556,
+        1224,
+        638
+      ],
+      "anchor_world_px": [
+        1188.0,
+        631.44
+      ],
+      "z_order": 638
+    },
+    {
+      "sprite_id": 24,
+      "sprite_name": "red_banner_guard_central_east",
+      "category": "unit",
+      "faction": "red",
+      "source_box": [
+        888,
+        344,
+        958,
+        426
+      ],
+      "anchor_world_px": [
+        923.0,
+        419.44
+      ],
+      "z_order": 426
+    }
+  ],
+  "notes": "元画像を、地形・建物・ユニット・橋/ルートオブジェクトに分けたレイヤー定義。"
+}

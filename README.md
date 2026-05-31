@@ -17,6 +17,17 @@ NEOFAMI向けの架空1991年ファンタジーRTS RPG MVPです。
 
 分岐マップから接敵し、味方3体と敵3体の半自動バトルに入ります。FIGHT / MAGIC / WAIT / RETREAT、白魔道士の回復詠唱、騎士の防御、敵マジシャンのCAST GAUGE、勝利/敗北/撤退結果を実装しています。
 
+## Hardware Spec
+
+`files/NEOFAMI_proposal.md` に基づき、グラフィック仕様を NEOFAMI v0.2 / SMS+ 16-color mode へ更新しました。
+
+- 256x240固定、8x8パターン基準
+- 16x16マップチップは8x8パターン4枚で構成
+- 1スプライト/1BGチップあたり16色まで
+- 各スプライト独自パレット
+- NES 54色 + SMS 64色 + RGBの拡張パレット
+- 強化グラフィック: `fainalfantasyrts.neofami/assets/enhanced/sms_skylands/`
+
 ## Third-Party Font
 
 UIフォントには8x8ドット日本語フォント「美咲フォント」PNG版を使用しています。

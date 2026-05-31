@@ -1,0 +1,5218 @@
+{
+  "type": "tileset",
+  "version": "1.10",
+  "tiledversion": "1.10.2",
+  "name": "sms_skylands_mapchips_16",
+  "tilewidth": 16,
+  "tileheight": 16,
+  "spacing": 0,
+  "margin": 0,
+  "columns": 16,
+  "tilecount": 80,
+  "image": "../tiles/sms_skylands_mapchips_16.png",
+  "imagewidth": 256,
+  "imageheight": 80,
+  "transparentcolor": "#000000",
+  "tiles": [
+    {
+      "id": 0,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "sky_plain"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 0
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background,void"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "sky_deep"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background,void"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cloud_small"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 9
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 10
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 11
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background,cloud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cloud_big"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 12
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 13
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 14
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 15
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background,cloud"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cloud_shadow"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 16
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 17
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 18
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 19
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background,cloud"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "sky_sparkle"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 20
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 21
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 22
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 23
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_center"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 24
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 25
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 26
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 27
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "ground,seamless"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_light"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 28
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 29
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 30
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 31
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "ground,seamless"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_dark"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 32
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 33
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 34
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 35
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "ground,seamless"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_flowers"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 36
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 37
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 38
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 39
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "ground,detail"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_rocky"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 40
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 41
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 42
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 43
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "ground,detail"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "forest_dense"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "forest"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 44
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 45
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 46
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 47
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "forest,soft_block"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "forest_sparse"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "forest"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 48
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 49
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 50
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 51
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "forest"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "forest_edge"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "forest"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 52
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 53
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 54
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 55
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "forest,edge"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bush_patch"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 56
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 57
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 58
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 59
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "detail"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "meadow_stones"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "grass"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 60
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 61
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 62
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 63
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "detail"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_south"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 9
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 64
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 65
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 66
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 67
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_north"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 68
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 69
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 70
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 71
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_west"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 72
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 73
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 74
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 75
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_east"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 76
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 77
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 78
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 79
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_corner_nw"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 80
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 81
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 82
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 83
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_corner_ne"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 84
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 85
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 86
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 87
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_corner_sw"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 88
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 89
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 90
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 91
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_corner_se"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 92
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 93
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 94
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 95
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_tip_south"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 96
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 97
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 98
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_underhang"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 100
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 101
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 102
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 103
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "cliff_crack"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "edge"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 10
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 104
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 105
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 106
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 107
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "island_edge"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "island_shadow"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "cliff"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 108
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 109
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 110
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 111
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "shadow"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_base"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mixed_terrain_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 9
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 112
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 113
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 114
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 115
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_peak"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 116
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 117
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 118
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 119
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_left_slope"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 120
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 121
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 122
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 123
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_right_slope"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 124
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 125
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 126
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 127
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_ridge"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 128
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 129
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 130
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 131
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_shadow"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 132
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 133
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 134
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 135
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "snow_peak"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 8
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 136
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 137
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 138
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 139
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "mountain_pass"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "mountain"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mixed_terrain_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 9
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 140
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 141
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 142
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 143
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "mountain"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "stone_floor"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stone"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 144
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 145
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 146
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 147
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "stone_cracked"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stone"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 148
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 149
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 150
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 151
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "ruin_floor"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stone"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 152
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 153
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 154
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 155
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "ruin_wall"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "structure_tile"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 4
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 156
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 157
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 158
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 159
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "magic_floor"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stone"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 160
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 161
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 162
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 163
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "crystal_patch"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "resource"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 164
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 165
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 166
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 167
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "castle_courtyard"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stone"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 168
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 169
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 170
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 171
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "stone"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_h"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 172
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 173
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 174
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 175
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_v"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 176
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 177
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 178
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 179
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_ne"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 180
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 181
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 182
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 183
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_nw"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 184
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 185
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 186
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 187
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_se"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 188
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 189
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 190
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 191
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_sw"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 192
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 193
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 194
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 195
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_cross"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 196
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 197
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 198
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 199
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_t_n"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 200
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 201
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 202
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 203
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_t_s"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 204
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 205
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 206
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 207
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_t_w"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 208
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 209
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 210
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 211
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_t_e"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 212
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 213
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 214
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 215
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_end_n"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 216
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 217
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 218
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 219
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_end_s"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 220
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 221
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 222
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 223
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_end_w"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 224
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 225
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 226
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 227
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "road_end_e"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 228
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 229
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 230
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 231
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_wood_h"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 232
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 232
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 233
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 233
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,bridge"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_wood_v"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 234
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 235
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 234
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 235
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,bridge"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_stone_h"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 236
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 236
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 237
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 237
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,bridge"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "bridge_stone_v"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "bridge_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 238
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 239
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 238
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 239
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,bridge"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "stairs_up"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stairs_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 240
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 241
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 242
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 243
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,stairs"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "stairs_down"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "stairs_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 244
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 245
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 246
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 247
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,stairs"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "flag_marker_blue"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "object_sprite_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 248
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 249
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 250
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 251
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "marker,sprite_tile"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "flag_marker_red"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "object_sprite_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 252
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 253
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 250
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 251
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "marker,sprite_tile"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "selection_cursor"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "ui_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "object_sprite_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 254
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 255
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 256
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 257
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "ui,selection"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "fort_shadow"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "shadow_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 258
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 259
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 260
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 261
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "shadow,overlay"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "crystal_obelisk_tile"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "resource"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 262
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 263
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 264
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 265
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "resource,crystal"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "tower_roof_tile"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "structure_tile"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "object_sprite_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 266
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 267
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 268
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 269
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "structure"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "stone_gate_tile"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "structure_tile"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 270
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 271
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 272
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 273
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "structure"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "void_gradient"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "sky"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 274
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 274
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 275
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 275
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "background"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "forest_mountain_transition"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "transition"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mixed_terrain_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 276
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 277
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 278
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 279
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "transition"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_mountain_transition"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "transition"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mixed_terrain_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "block"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 280
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 281
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 282
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 283
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "transition"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_stone_transition"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "transition"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mixed_terrain_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 284
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 285
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 286
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 287
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "transition"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "grass_cliff_transition"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "transition"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "grass_cliff_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 3
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 7
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 288
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 289
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 290
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 291
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "transition"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "ruin_grass"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "transition"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mixed_terrain_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 6
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 292
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 293
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 294
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 295
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "transition,ruins"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_stone_h"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 296
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 297
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 298
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 299
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road,stone"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "path_stone_v"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "road_overlay"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "mountain_stone_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 1
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "none"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 5
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 300
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 301
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 302
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 303
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "overlay,road,stone"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "debug_empty"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "value": "debug"
+        },
+        {
+          "name": "palette_id",
+          "type": "string",
+          "value": "sky_cloud_16"
+        },
+        {
+          "name": "walkable",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "name": "move_cost",
+          "type": "int",
+          "value": 99
+        },
+        {
+          "name": "collision",
+          "type": "string",
+          "value": "void"
+        },
+        {
+          "name": "color_count",
+          "type": "int",
+          "value": 2
+        },
+        {
+          "name": "pattern_tl",
+          "type": "int",
+          "value": 304
+        },
+        {
+          "name": "pattern_tr",
+          "type": "int",
+          "value": 305
+        },
+        {
+          "name": "pattern_bl",
+          "type": "int",
+          "value": 306
+        },
+        {
+          "name": "pattern_br",
+          "type": "int",
+          "value": 307
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "value": "debug"
+        }
+      ]
+    }
+  ]
+}

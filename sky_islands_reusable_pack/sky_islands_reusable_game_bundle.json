@@ -1,0 +1,2971 @@
+{
+  "version": "1.0.0",
+  "tile_size": 64,
+  "assets": {
+    "terrain_tileset": "terrain/sky_islands_reusable_terrain_tileset_64.png",
+    "terrain_tileset_tiled": "terrain/sky_islands_reusable_terrain_tileset_64.tsj",
+    "sprites_atlas": "sprites/sky_islands_sprites_atlas.png",
+    "sprites_atlas_json": "sprites/sky_islands_sprites_atlas.json",
+    "sprites_sheet_192": "sprites/sky_islands_sprites_sheet_192.png",
+    "sprites_sheet_192_tiled": "sprites/sky_islands_sprites_sheet_192.tsj"
+  },
+  "terrain_manifest": [
+    {
+      "id": 0,
+      "name": "sky_void",
+      "terrain_type": "sky",
+      "walkable": false,
+      "move_cost": 999,
+      "layer": "base",
+      "seamless": true,
+      "collision": true,
+      "notes": "空中/落下扱い。"
+    },
+    {
+      "id": 1,
+      "name": "grass_light_seamless",
+      "terrain_type": "grass",
+      "walkable": true,
+      "move_cost": 1.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "name": "grass_mid_seamless",
+      "terrain_type": "grass",
+      "walkable": true,
+      "move_cost": 1.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "name": "grass_dark_seamless",
+      "terrain_type": "grass",
+      "walkable": true,
+      "move_cost": 1.1,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "name": "forest_dense_seamless",
+      "terrain_type": "forest",
+      "walkable": true,
+      "move_cost": 1.8,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "name": "mountain_base_seamless",
+      "terrain_type": "mountain",
+      "walkable": false,
+      "move_cost": 3.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": true,
+      "notes": "山地。歩行不可設定。"
+    },
+    {
+      "id": 6,
+      "name": "mountain_peak_seamless",
+      "terrain_type": "mountain",
+      "walkable": false,
+      "move_cost": 4.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": true,
+      "notes": "高山。歩行不可設定。"
+    },
+    {
+      "id": 7,
+      "name": "ruins_stone_floor_seamless",
+      "terrain_type": "stone",
+      "walkable": true,
+      "move_cost": 1.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "name": "dirt_plain_seamless",
+      "terrain_type": "dirt",
+      "walkable": true,
+      "move_cost": 1.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "name": "cliff_face_seamless",
+      "terrain_type": "cliff",
+      "walkable": false,
+      "move_cost": 999,
+      "layer": "base",
+      "seamless": true,
+      "collision": true,
+      "notes": "崖面。"
+    },
+    {
+      "id": 10,
+      "name": "crystal_stone_floor_seamless",
+      "terrain_type": "stone_crystal",
+      "walkable": true,
+      "move_cost": 1.0,
+      "layer": "base",
+      "seamless": true,
+      "collision": false,
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "name": "transparent_blank",
+      "terrain_type": "none",
+      "walkable": true,
+      "move_cost": 0.0,
+      "layer": "overlay",
+      "seamless": true,
+      "collision": false,
+      "notes": "透明タイル。"
+    },
+    {
+      "id": 12,
+      "name": "island_edge_missing_0000_NESW",
+      "terrain_type": "island_edge",
+      "walkable": true,
+      "move_cost": 1.0,
+      "layer": "base",
+      "seamless": false,
+      "collision": false,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 13,
+      "name": "island_edge_missing_0001_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 14,
+      "name": "island_edge_missing_0010_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 15,
+      "name": "island_edge_missing_0011_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 16,
+      "name": "island_edge_missing_0100_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 17,
+      "name": "island_edge_missing_0101_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 18,
+      "name": "island_edge_missing_0110_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 19,
+      "name": "island_edge_missing_0111_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 20,
+      "name": "island_edge_missing_1000_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 21,
+      "name": "island_edge_missing_1001_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 22,
+      "name": "island_edge_missing_1010_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 23,
+      "name": "island_edge_missing_1011_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 24,
+      "name": "island_edge_missing_1100_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 25,
+      "name": "island_edge_missing_1101_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 26,
+      "name": "island_edge_missing_1110_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 27,
+      "name": "island_edge_missing_1111_NESW",
+      "terrain_type": "island_edge",
+      "walkable": false,
+      "move_cost": 1.2,
+      "layer": "base",
+      "seamless": false,
+      "collision": true,
+      "notes": "NESWの各方向で隣接地形が無い時に使う島端オートタイル。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 28,
+      "name": "path_overlay_0000_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 29,
+      "name": "path_overlay_0001_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 30,
+      "name": "path_overlay_0010_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 31,
+      "name": "path_overlay_0011_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 32,
+      "name": "path_overlay_0100_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 33,
+      "name": "path_overlay_0101_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 34,
+      "name": "path_overlay_0110_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 35,
+      "name": "path_overlay_0111_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 36,
+      "name": "path_overlay_1000_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 37,
+      "name": "path_overlay_1001_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 38,
+      "name": "path_overlay_1010_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 39,
+      "name": "path_overlay_1011_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 40,
+      "name": "path_overlay_1100_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 41,
+      "name": "path_overlay_1101_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 42,
+      "name": "path_overlay_1110_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 43,
+      "name": "path_overlay_1111_NESW",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "透明背景の道オーバーレイ。bit: N=1,E=2,S=4,W=8。"
+    },
+    {
+      "id": 44,
+      "name": "path_diag_ne_sw_overlay",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "斜め道 NE-SW。透明背景。"
+    },
+    {
+      "id": 45,
+      "name": "path_diag_nw_se_overlay",
+      "terrain_type": "path_overlay",
+      "walkable": true,
+      "move_cost": 0.8,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "斜め道 NW-SE。透明背景。"
+    },
+    {
+      "id": 46,
+      "name": "bridge_horizontal_overlay",
+      "terrain_type": "bridge_overlay",
+      "walkable": true,
+      "move_cost": 0.7,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "水平橋。透明背景。"
+    },
+    {
+      "id": 47,
+      "name": "bridge_vertical_overlay",
+      "terrain_type": "bridge_overlay",
+      "walkable": true,
+      "move_cost": 0.7,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "垂直橋。透明背景。"
+    },
+    {
+      "id": 48,
+      "name": "bridge_diag_ne_sw_overlay",
+      "terrain_type": "bridge_overlay",
+      "walkable": true,
+      "move_cost": 0.7,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "斜め橋 NE-SW。透明背景。"
+    },
+    {
+      "id": 49,
+      "name": "bridge_diag_nw_se_overlay",
+      "terrain_type": "bridge_overlay",
+      "walkable": true,
+      "move_cost": 0.7,
+      "layer": "overlay",
+      "seamless": false,
+      "collision": false,
+      "notes": "斜め橋 NW-SE。透明背景。"
+    },
+    {
+      "id": 50,
+      "name": "move_cursor_overlay",
+      "terrain_type": "ui_overlay",
+      "walkable": true,
+      "move_cost": 0,
+      "layer": "overlay",
+      "seamless": true,
+      "collision": false,
+      "notes": "選択・目的地などのUIオーバーレイ。"
+    },
+    {
+      "id": 51,
+      "name": "target_marker_overlay",
+      "terrain_type": "ui_overlay",
+      "walkable": true,
+      "move_cost": 0,
+      "layer": "overlay",
+      "seamless": true,
+      "collision": false,
+      "notes": "選択・目的地などのUIオーバーレイ。"
+    },
+    {
+      "id": 52,
+      "name": "magic_node_overlay",
+      "terrain_type": "ui_overlay",
+      "walkable": true,
+      "move_cost": 0,
+      "layer": "overlay",
+      "seamless": true,
+      "collision": false,
+      "notes": "選択・目的地などのUIオーバーレイ。"
+    },
+    {
+      "id": 53,
+      "name": "camp_marker_overlay",
+      "terrain_type": "ui_overlay",
+      "walkable": true,
+      "move_cost": 0,
+      "layer": "overlay",
+      "seamless": true,
+      "collision": false,
+      "notes": "選択・目的地などのUIオーバーレイ。"
+    }
+  ],
+  "sprite_manifest": [
+    {
+      "id": 0,
+      "name": "castle_northwest",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "北西の城。",
+      "source_box": [
+        150,
+        84,
+        320,
+        228
+      ],
+      "source_trim": [
+        0,
+        0,
+        170,
+        130
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.9
+      ],
+      "anchor_px": [
+        85.0,
+        129.6
+      ],
+      "anchor_norm": [
+        0.5,
+        0.9969
+      ],
+      "width": 170,
+      "height": 130,
+      "individual_image": "individual/00_castle_northwest.png",
+      "atlas_frame": {
+        "x": 4,
+        "y": 4,
+        "w": 170,
+        "h": 130
+      },
+      "sheet_192_cell": {
+        "tile_id": 0,
+        "x": 0,
+        "y": 0,
+        "w": 192,
+        "h": 192,
+        "draw_x": 11,
+        "draw_y": 54
+      }
+    },
+    {
+      "id": 1,
+      "name": "arcane_tower",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "中央上の魔法塔。",
+      "source_box": [
+        590,
+        72,
+        752,
+        222
+      ],
+      "source_trim": [
+        6,
+        0,
+        153,
+        143
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.93
+      ],
+      "anchor_px": [
+        75.0,
+        139.5
+      ],
+      "anchor_norm": [
+        0.5102,
+        0.9755
+      ],
+      "width": 147,
+      "height": 143,
+      "individual_image": "individual/01_arcane_tower.png",
+      "atlas_frame": {
+        "x": 178,
+        "y": 4,
+        "w": 147,
+        "h": 143
+      },
+      "sheet_192_cell": {
+        "tile_id": 1,
+        "x": 192,
+        "y": 0,
+        "w": 192,
+        "h": 192,
+        "draw_x": 22,
+        "draw_y": 41
+      }
+    },
+    {
+      "id": 2,
+      "name": "sky_ruins_large",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "北東の大型遺跡。",
+      "source_box": [
+        955,
+        66,
+        1150,
+        236
+      ],
+      "source_trim": [
+        15,
+        3,
+        195,
+        154
+      ],
+      "source_anchor_norm": [
+        0.52,
+        0.92
+      ],
+      "anchor_px": [
+        86.4,
+        153.4
+      ],
+      "anchor_norm": [
+        0.48,
+        1.0159
+      ],
+      "width": 180,
+      "height": 151,
+      "individual_image": "individual/02_sky_ruins_large.png",
+      "atlas_frame": {
+        "x": 329,
+        "y": 4,
+        "w": 180,
+        "h": 151
+      },
+      "sheet_192_cell": {
+        "tile_id": 2,
+        "x": 384,
+        "y": 0,
+        "w": 192,
+        "h": 192,
+        "draw_x": 6,
+        "draw_y": 33
+      }
+    },
+    {
+      "id": 3,
+      "name": "crystal_shrine_round",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "西側の円形クリスタル神殿。",
+      "source_box": [
+        54,
+        292,
+        220,
+        474
+      ],
+      "source_trim": [
+        6,
+        0,
+        161,
+        176
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.9
+      ],
+      "anchor_px": [
+        77.0,
+        163.8
+      ],
+      "anchor_norm": [
+        0.4968,
+        0.9307
+      ],
+      "width": 155,
+      "height": 176,
+      "individual_image": "individual/03_crystal_shrine_round.png",
+      "atlas_frame": {
+        "x": 513,
+        "y": 4,
+        "w": 155,
+        "h": 176
+      },
+      "sheet_192_cell": {
+        "tile_id": 3,
+        "x": 576,
+        "y": 0,
+        "w": 192,
+        "h": 192,
+        "draw_x": 18,
+        "draw_y": 8
+      }
+    },
+    {
+      "id": 4,
+      "name": "crystal_city_ruins",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "南中央のクリスタル遺跡都市。",
+      "source_box": [
+        432,
+        358,
+        626,
+        530
+      ],
+      "source_trim": [
+        9,
+        0,
+        190,
+        164
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        88.0,
+        158.24
+      ],
+      "anchor_norm": [
+        0.4862,
+        0.9649
+      ],
+      "width": 181,
+      "height": 164,
+      "individual_image": "individual/04_crystal_city_ruins.png",
+      "atlas_frame": {
+        "x": 672,
+        "y": 4,
+        "w": 181,
+        "h": 164
+      },
+      "sheet_192_cell": {
+        "tile_id": 4,
+        "x": 768,
+        "y": 0,
+        "w": 192,
+        "h": 192,
+        "draw_x": 5,
+        "draw_y": 20
+      }
+    },
+    {
+      "id": 5,
+      "name": "east_keep",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "東側の砦。",
+      "source_box": [
+        1060,
+        300,
+        1240,
+        462
+      ],
+      "source_trim": [
+        7,
+        0,
+        167,
+        156
+      ],
+      "source_anchor_norm": [
+        0.52,
+        0.92
+      ],
+      "anchor_px": [
+        86.6,
+        149.04
+      ],
+      "anchor_norm": [
+        0.5413,
+        0.9554
+      ],
+      "width": 160,
+      "height": 156,
+      "individual_image": "individual/05_east_keep.png",
+      "atlas_frame": {
+        "x": 857,
+        "y": 4,
+        "w": 160,
+        "h": 156
+      },
+      "sheet_192_cell": {
+        "tile_id": 5,
+        "x": 960,
+        "y": 0,
+        "w": 192,
+        "h": 192,
+        "draw_x": 16,
+        "draw_y": 28
+      }
+    },
+    {
+      "id": 6,
+      "name": "beacon_outpost_far_east",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "東端の小拠点。",
+      "source_box": [
+        1360,
+        96,
+        1500,
+        220
+      ],
+      "source_trim": [
+        7,
+        0,
+        136,
+        119
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        63.0,
+        114.08
+      ],
+      "anchor_norm": [
+        0.4884,
+        0.9587
+      ],
+      "width": 129,
+      "height": 119,
+      "individual_image": "individual/06_beacon_outpost_far_east.png",
+      "atlas_frame": {
+        "x": 4,
+        "y": 184,
+        "w": 129,
+        "h": 119
+      },
+      "sheet_192_cell": {
+        "tile_id": 6,
+        "x": 0,
+        "y": 192,
+        "w": 192,
+        "h": 192,
+        "draw_x": 31,
+        "draw_y": 65
+      }
+    },
+    {
+      "id": 7,
+      "name": "crystal_watchtower",
+      "category": "building",
+      "faction": "neutral",
+      "notes": "南東小島の塔。",
+      "source_box": [
+        1350,
+        392,
+        1498,
+        548
+      ],
+      "source_trim": [
+        7,
+        1,
+        144,
+        156
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        67.0,
+        142.52
+      ],
+      "anchor_norm": [
+        0.4891,
+        0.9195
+      ],
+      "width": 137,
+      "height": 155,
+      "individual_image": "individual/07_crystal_watchtower.png",
+      "atlas_frame": {
+        "x": 137,
+        "y": 184,
+        "w": 137,
+        "h": 155
+      },
+      "sheet_192_cell": {
+        "tile_id": 7,
+        "x": 192,
+        "y": 192,
+        "w": 192,
+        "h": 192,
+        "draw_x": 27,
+        "draw_y": 29
+      }
+    },
+    {
+      "id": 8,
+      "name": "broken_stone_bridge",
+      "category": "route_object",
+      "faction": "neutral",
+      "notes": "壊れた石橋。",
+      "source_box": [
+        970,
+        405,
+        1120,
+        476
+      ],
+      "source_trim": [
+        0,
+        0,
+        150,
+        71
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.8
+      ],
+      "anchor_px": [
+        75.0,
+        56.8
+      ],
+      "anchor_norm": [
+        0.5,
+        0.8
+      ],
+      "width": 150,
+      "height": 71,
+      "individual_image": "individual/08_broken_stone_bridge.png",
+      "atlas_frame": {
+        "x": 278,
+        "y": 184,
+        "w": 150,
+        "h": 71
+      },
+      "sheet_192_cell": {
+        "tile_id": 8,
+        "x": 384,
+        "y": 192,
+        "w": 192,
+        "h": 192,
+        "draw_x": 21,
+        "draw_y": 113
+      }
+    },
+    {
+      "id": 9,
+      "name": "stone_bridge_southeast",
+      "category": "route_object",
+      "faction": "neutral",
+      "notes": "南東の石橋。",
+      "source_box": [
+        1218,
+        520,
+        1368,
+        594
+      ],
+      "source_trim": [
+        12,
+        0,
+        146,
+        74
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.8
+      ],
+      "anchor_px": [
+        63.0,
+        59.2
+      ],
+      "anchor_norm": [
+        0.4701,
+        0.8
+      ],
+      "width": 134,
+      "height": 74,
+      "individual_image": "individual/09_stone_bridge_southeast.png",
+      "atlas_frame": {
+        "x": 432,
+        "y": 184,
+        "w": 134,
+        "h": 74
+      },
+      "sheet_192_cell": {
+        "tile_id": 9,
+        "x": 576,
+        "y": 192,
+        "w": 192,
+        "h": 192,
+        "draw_x": 29,
+        "draw_y": 110
+      }
+    },
+    {
+      "id": 10,
+      "name": "blue_choco_rider",
+      "category": "unit",
+      "faction": "blue",
+      "notes": "青軍チョコライダー。",
+      "source_box": [
+        698,
+        218,
+        764,
+        292
+      ],
+      "source_trim": [
+        0,
+        0,
+        65,
+        74
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        33.0,
+        68.08
+      ],
+      "anchor_norm": [
+        0.5077,
+        0.92
+      ],
+      "width": 65,
+      "height": 74,
+      "individual_image": "individual/10_blue_choco_rider.png",
+      "atlas_frame": {
+        "x": 570,
+        "y": 184,
+        "w": 65,
+        "h": 74
+      },
+      "sheet_192_cell": {
+        "tile_id": 10,
+        "x": 768,
+        "y": 192,
+        "w": 192,
+        "h": 192,
+        "draw_x": 63,
+        "draw_y": 110
+      }
+    },
+    {
+      "id": 11,
+      "name": "blue_black_mage",
+      "category": "unit",
+      "faction": "blue",
+      "notes": "青軍黒魔道士。",
+      "source_box": [
+        570,
+        257,
+        636,
+        328
+      ],
+      "source_trim": [
+        0,
+        0,
+        66,
+        71
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        33.0,
+        65.32
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 66,
+      "height": 71,
+      "individual_image": "individual/11_blue_black_mage.png",
+      "atlas_frame": {
+        "x": 639,
+        "y": 184,
+        "w": 66,
+        "h": 71
+      },
+      "sheet_192_cell": {
+        "tile_id": 11,
+        "x": 960,
+        "y": 192,
+        "w": 192,
+        "h": 192,
+        "draw_x": 63,
+        "draw_y": 113
+      }
+    },
+    {
+      "id": 12,
+      "name": "blue_swordsman_top",
+      "category": "unit",
+      "faction": "blue",
+      "notes": "青軍剣士。",
+      "source_box": [
+        630,
+        248,
+        700,
+        322
+      ],
+      "source_trim": [
+        0,
+        2,
+        70,
+        74
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        35.0,
+        66.08
+      ],
+      "anchor_norm": [
+        0.5,
+        0.9178
+      ],
+      "width": 70,
+      "height": 72,
+      "individual_image": "individual/12_blue_swordsman_top.png",
+      "atlas_frame": {
+        "x": 709,
+        "y": 184,
+        "w": 70,
+        "h": 72
+      },
+      "sheet_192_cell": {
+        "tile_id": 12,
+        "x": 0,
+        "y": 384,
+        "w": 192,
+        "h": 192,
+        "draw_x": 61,
+        "draw_y": 112
+      }
+    },
+    {
+      "id": 13,
+      "name": "blue_swordsman_selected",
+      "category": "unit",
+      "faction": "blue",
+      "notes": "青軍選択中剣士。",
+      "source_box": [
+        632,
+        304,
+        704,
+        382
+      ],
+      "source_trim": [
+        0,
+        0,
+        72,
+        78
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        36.0,
+        71.76
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 72,
+      "height": 78,
+      "individual_image": "individual/13_blue_swordsman_selected.png",
+      "atlas_frame": {
+        "x": 783,
+        "y": 184,
+        "w": 72,
+        "h": 78
+      },
+      "sheet_192_cell": {
+        "tile_id": 13,
+        "x": 192,
+        "y": 384,
+        "w": 192,
+        "h": 192,
+        "draw_x": 60,
+        "draw_y": 106
+      }
+    },
+    {
+      "id": 14,
+      "name": "blue_dragoon",
+      "category": "unit",
+      "faction": "blue",
+      "notes": "青軍竜騎士。",
+      "source_box": [
+        748,
+        295,
+        824,
+        372
+      ],
+      "source_trim": [
+        0,
+        0,
+        76,
+        77
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        38.0,
+        70.84
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 76,
+      "height": 77,
+      "individual_image": "individual/14_blue_dragoon.png",
+      "atlas_frame": {
+        "x": 859,
+        "y": 184,
+        "w": 76,
+        "h": 77
+      },
+      "sheet_192_cell": {
+        "tile_id": 14,
+        "x": 384,
+        "y": 384,
+        "w": 192,
+        "h": 192,
+        "draw_x": 58,
+        "draw_y": 107
+      }
+    },
+    {
+      "id": 15,
+      "name": "red_banner_knight_north",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        806,
+        78,
+        884,
+        168
+      ],
+      "source_trim": [
+        0,
+        0,
+        78,
+        90
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        39.0,
+        82.8
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 78,
+      "height": 90,
+      "individual_image": "individual/15_red_banner_knight_north.png",
+      "atlas_frame": {
+        "x": 939,
+        "y": 184,
+        "w": 78,
+        "h": 90
+      },
+      "sheet_192_cell": {
+        "tile_id": 15,
+        "x": 576,
+        "y": 384,
+        "w": 192,
+        "h": 192,
+        "draw_x": 57,
+        "draw_y": 94
+      }
+    },
+    {
+      "id": 16,
+      "name": "red_banner_knight_nw",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        300,
+        145,
+        364,
+        232
+      ],
+      "source_trim": [
+        0,
+        0,
+        64,
+        87
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        32.0,
+        80.04
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 64,
+      "height": 87,
+      "individual_image": "individual/16_red_banner_knight_nw.png",
+      "atlas_frame": {
+        "x": 4,
+        "y": 343,
+        "w": 64,
+        "h": 87
+      },
+      "sheet_192_cell": {
+        "tile_id": 16,
+        "x": 768,
+        "y": 384,
+        "w": 192,
+        "h": 192,
+        "draw_x": 64,
+        "draw_y": 97
+      }
+    },
+    {
+      "id": 17,
+      "name": "red_spearman_ne",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍槍兵。",
+      "source_box": [
+        1005,
+        214,
+        1064,
+        282
+      ],
+      "source_trim": [
+        0,
+        0,
+        59,
+        68
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        29.5,
+        62.56
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 59,
+      "height": 68,
+      "individual_image": "individual/17_red_spearman_ne.png",
+      "atlas_frame": {
+        "x": 72,
+        "y": 343,
+        "w": 59,
+        "h": 68
+      },
+      "sheet_192_cell": {
+        "tile_id": 17,
+        "x": 960,
+        "y": 384,
+        "w": 192,
+        "h": 192,
+        "draw_x": 66,
+        "draw_y": 116
+      }
+    },
+    {
+      "id": 18,
+      "name": "red_banner_knight_east",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        1205,
+        184,
+        1268,
+        268
+      ],
+      "source_trim": [
+        0,
+        0,
+        63,
+        84
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        31.5,
+        77.28
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 63,
+      "height": 84,
+      "individual_image": "individual/18_red_banner_knight_east.png",
+      "atlas_frame": {
+        "x": 135,
+        "y": 343,
+        "w": 63,
+        "h": 84
+      },
+      "sheet_192_cell": {
+        "tile_id": 18,
+        "x": 0,
+        "y": 576,
+        "w": 192,
+        "h": 192,
+        "draw_x": 64,
+        "draw_y": 100
+      }
+    },
+    {
+      "id": 19,
+      "name": "red_banner_guard_keep",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        1124,
+        280,
+        1190,
+        356
+      ],
+      "source_trim": [
+        0,
+        0,
+        66,
+        76
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        33.0,
+        69.92
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 66,
+      "height": 76,
+      "individual_image": "individual/19_red_banner_guard_keep.png",
+      "atlas_frame": {
+        "x": 202,
+        "y": 343,
+        "w": 66,
+        "h": 76
+      },
+      "sheet_192_cell": {
+        "tile_id": 19,
+        "x": 192,
+        "y": 576,
+        "w": 192,
+        "h": 192,
+        "draw_x": 63,
+        "draw_y": 108
+      }
+    },
+    {
+      "id": 20,
+      "name": "red_banner_guard_southwest",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        238,
+        467,
+        304,
+        552
+      ],
+      "source_trim": [
+        0,
+        0,
+        66,
+        85
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        33.0,
+        78.2
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 66,
+      "height": 85,
+      "individual_image": "individual/20_red_banner_guard_southwest.png",
+      "atlas_frame": {
+        "x": 272,
+        "y": 343,
+        "w": 66,
+        "h": 85
+      },
+      "sheet_192_cell": {
+        "tile_id": 20,
+        "x": 384,
+        "y": 576,
+        "w": 192,
+        "h": 192,
+        "draw_x": 63,
+        "draw_y": 99
+      }
+    },
+    {
+      "id": 21,
+      "name": "red_banner_guard_south",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        864,
+        450,
+        935,
+        535
+      ],
+      "source_trim": [
+        0,
+        4,
+        71,
+        85
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        35.5,
+        74.2
+      ],
+      "anchor_norm": [
+        0.5,
+        0.916
+      ],
+      "width": 71,
+      "height": 81,
+      "individual_image": "individual/21_red_banner_guard_south.png",
+      "atlas_frame": {
+        "x": 342,
+        "y": 343,
+        "w": 71,
+        "h": 81
+      },
+      "sheet_192_cell": {
+        "tile_id": 21,
+        "x": 576,
+        "y": 576,
+        "w": 192,
+        "h": 192,
+        "draw_x": 60,
+        "draw_y": 103
+      }
+    },
+    {
+      "id": 22,
+      "name": "red_banner_guard_lower_east",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        1170,
+        386,
+        1235,
+        466
+      ],
+      "source_trim": [
+        0,
+        0,
+        65,
+        80
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        32.5,
+        73.6
+      ],
+      "anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "width": 65,
+      "height": 80,
+      "individual_image": "individual/22_red_banner_guard_lower_east.png",
+      "atlas_frame": {
+        "x": 417,
+        "y": 343,
+        "w": 65,
+        "h": 80
+      },
+      "sheet_192_cell": {
+        "tile_id": 22,
+        "x": 768,
+        "y": 576,
+        "w": 192,
+        "h": 192,
+        "draw_x": 63,
+        "draw_y": 104
+      }
+    },
+    {
+      "id": 23,
+      "name": "red_banner_guard_southeast_island",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        1152,
+        556,
+        1224,
+        638
+      ],
+      "source_trim": [
+        0,
+        3,
+        72,
+        82
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        36.0,
+        72.44
+      ],
+      "anchor_norm": [
+        0.5,
+        0.917
+      ],
+      "width": 72,
+      "height": 79,
+      "individual_image": "individual/23_red_banner_guard_southeast_island.png",
+      "atlas_frame": {
+        "x": 486,
+        "y": 343,
+        "w": 72,
+        "h": 79
+      },
+      "sheet_192_cell": {
+        "tile_id": 23,
+        "x": 960,
+        "y": 576,
+        "w": 192,
+        "h": 192,
+        "draw_x": 60,
+        "draw_y": 105
+      }
+    },
+    {
+      "id": 24,
+      "name": "red_banner_guard_central_east",
+      "category": "unit",
+      "faction": "red",
+      "notes": "赤軍旗持ちユニット。",
+      "source_box": [
+        888,
+        344,
+        958,
+        426
+      ],
+      "source_trim": [
+        2,
+        0,
+        70,
+        82
+      ],
+      "source_anchor_norm": [
+        0.5,
+        0.92
+      ],
+      "anchor_px": [
+        33.0,
+        75.44
+      ],
+      "anchor_norm": [
+        0.4853,
+        0.92
+      ],
+      "width": 68,
+      "height": 82,
+      "individual_image": "individual/24_red_banner_guard_central_east.png",
+      "atlas_frame": {
+        "x": 562,
+        "y": 343,
+        "w": 68,
+        "h": 82
+      },
+      "sheet_192_cell": {
+        "tile_id": 24,
+        "x": 0,
+        "y": 768,
+        "w": 192,
+        "h": 192,
+        "draw_x": 62,
+        "draw_y": 102
+      }
+    },
+    {
+      "id": 25,
+      "name": "selection_cursor",
+      "category": "ui_overlay",
+      "faction": "neutral",
+      "notes": "選択中ユニット用のカーソル。生成版。",
+      "source_box": null,
+      "source_trim": null,
+      "source_anchor_norm": [
+        0.5,
+        0.5
+      ],
+      "anchor_px": [
+        32,
+        32
+      ],
+      "anchor_norm": [
+        0.5,
+        0.5
+      ],
+      "width": 64,
+      "height": 64,
+      "individual_image": "individual/25_selection_cursor.png",
+      "atlas_frame": {
+        "x": 634,
+        "y": 343,
+        "w": 64,
+        "h": 64
+      },
+      "sheet_192_cell": {
+        "tile_id": 25,
+        "x": 192,
+        "y": 768,
+        "w": 192,
+        "h": 192,
+        "draw_x": 64,
+        "draw_y": 120
+      }
+    }
+  ],
+  "sample_map": {
+    "width": 24,
+    "height": 12,
+    "layers": {
+      "terrain_base": [
+        [
+          0,
+          21,
+          13,
+          13,
+          13,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          21,
+          2,
+          1,
+          2,
+          2,
+          6,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          20,
+          1,
+          2,
+          2,
+          1,
+          5,
+          6,
+          5,
+          6,
+          5,
+          1,
+          2,
+          7,
+          7,
+          7,
+          13,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          24,
+          2,
+          2,
+          1,
+          2,
+          6,
+          5,
+          6,
+          5,
+          6,
+          2,
+          2,
+          7,
+          7,
+          7,
+          7,
+          2,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          7,
+          7,
+          7,
+          7,
+          2,
+          1,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          2,
+          4,
+          4,
+          4,
+          4,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          2,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          24,
+          16,
+          4,
+          4,
+          4,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          3,
+          3,
+          3,
+          13,
+          13,
+          13,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          24,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          3,
+          3,
+          3,
+          1,
+          2,
+          2,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          2,
+          1,
+          2,
+          2,
+          1,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          24,
+          16,
+          16,
+          16,
+          16,
+          16,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "route_overlay": [
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          30,
+          36,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          38,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          30,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          36,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          38,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          38,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          38,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          30,
+          38,
+          38,
+          38,
+          36,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      ],
+      "bridge_overlay": [
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          46,
+          46,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      ],
+      "objects_and_units": [
+        {
+          "id": 1,
+          "gid": 55,
+          "x": 192,
+          "y": 168,
+          "name": "castle_northwest",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 2,
+          "gid": 56,
+          "x": 640,
+          "y": 172,
+          "name": "arcane_tower",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 3,
+          "gid": 57,
+          "x": 960,
+          "y": 228,
+          "name": "sky_ruins_large",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 4,
+          "gid": 58,
+          "x": 128,
+          "y": 434,
+          "name": "crystal_shrine_round",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 5,
+          "gid": 59,
+          "x": 512,
+          "y": 488,
+          "name": "crystal_city_ruins",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 6,
+          "gid": 60,
+          "x": 1152,
+          "y": 432,
+          "name": "east_keep",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 7,
+          "gid": 62,
+          "x": 1344,
+          "y": 556,
+          "name": "crystal_watchtower",
+          "type": "building",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 8,
+          "gid": 65,
+          "x": 704,
+          "y": 348,
+          "name": "blue_choco_rider",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 9,
+          "gid": 66,
+          "x": 576,
+          "y": 348,
+          "name": "blue_black_mage",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 10,
+          "gid": 67,
+          "x": 640,
+          "y": 348,
+          "name": "blue_swordsman_top",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 11,
+          "gid": 69,
+          "x": 768,
+          "y": 355,
+          "name": "blue_dragoon",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 12,
+          "gid": 70,
+          "x": 832,
+          "y": 222,
+          "name": "red_banner_knight_north",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 13,
+          "gid": 73,
+          "x": 1152,
+          "y": 296,
+          "name": "red_banner_knight_east",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "id": 14,
+          "gid": 79,
+          "x": 1216,
+          "y": 604,
+          "name": "red_banner_guard_central_east",
+          "type": "unit",
+          "width": 192,
+          "height": 192
+        }
+      ]
+    }
+  },
+  "source_layered_map": "source_layers/source_layered_map.json",
+  "usage_notes": [
+    "terrain_base は完全不透明の地形タイル。",
+    "route_overlay / bridge_overlay / marker は透明背景の上乗せタイル。",
+    "建物・ユニットは sprites_atlas または fixed 192px sheet のどちらでも利用可能。",
+    "別マップでは terrain_manifest の walkable / move_cost / collision を参照すると移動判定を組みやすい。"
+  ]
+}

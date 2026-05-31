@@ -1,4 +1,4 @@
-# NEOFAMI ゲーム制作仕様書 v1.0
+# NEOFAMI ゲーム制作仕様書 v1.1 / Hardware v0.2
 
 > **このドキュメントは AI コードジェネレータ（Codex / Claude 等）が NEOFAMI 向けゲームを生成する際に必ず参照・遵守するマスター仕様書である。**
 > 迷ったらこのドキュメントが最優先のルールブック。ここに書かれた制約・API・命名・フォーマットから逸脱してはならない。
@@ -22,7 +22,7 @@ NEOFAMIは6502を**エミュレートしない**。ゲームロジックは **Ty
 
 | 観点 | ルール |
 |---|---|
-| 見た目 | **ファミコン準拠の制約あり**（解像度・パレット・タイル）。これは MUST。 |
+| 見た目 | **ファミコンの解像度・ピクセルサイズ感 + SMS+ 16色表現**（解像度・タイル・パレット宣言）。これは MUST。 |
 | サウンド | **2A03 + 拡張音源チップの音色に準拠**。これは MUST。 |
 | 内部実装 | **制約なし**（120FPS可、スプライト無制限、レイヤー無制限、TS自由）。 |
 
@@ -44,28 +44,62 @@ NEOFAMIは6502を**エミュレートしない**。ゲームロジックは **Ty
 
 ## 3. グラフィック仕様（必ず守る）
 
+> v0.2では、files/NEOFAMI_proposal.md の方針に従い、NESの解像度とタイル美学を維持しつつ、SMS方式の「1スプライト/1BGチップあたり16色」を採用する。
+
 ### 3.1 タイル
 - スプライト・BGの最小単位は **8×8ピクセルタイル**（MUST）。
 - 大きなキャラは 8×8 タイルの **合成** で作る（例：16×16 = 2×2 タイル、32×32 = 4×4 タイル）。MUST。
+- マップチップは **16×16 px** を標準とし、内部的には8×8パターン4枚の組み合わせとして扱う（SHOULD）。
 - タイルは PNG で供給される。読み込み単位は必ず 8 の倍数の幅・高さであること（MUST）。
 
 ### 3.2 カラーパレット
-- 基本色は **NES標準54色パレット**（後述 §3.4）を使うこと（MUST）。
-- 1キャラ（スプライトグループ）あたりの推奨色数は **4色（うち1色は透明）**。これはファミコンらしさのための SHOULD。
-- 拡張256色パレットは **オプション**。使う場合は `manifest.json` の `palette: "extended"` を明示すること（MUST when used）。
+- 基本色は **NES標準54色 + SMS 64色 + 自由RGB** の拡張マスターパレットを使える（MAY）。
+- `manifest.json` の `palette: "nes"` 時はNES標準54色内に収めること（MUST）。
+- `manifest.json` の `palette: "extended"` 時はNES 54色、SMS 64色、またはRGBを使える。ただしレトロ感維持のため、1素材ごとの色数は絞ること（SHOULD）。
+- v0.2標準では **1スプライト/1BGチップあたり16色（透明1 + 表示15）** を上限とする（SHOULD）。
+- 各スプライトは独自の16色パレットを持てる。色違いキャラは `paletteVariants` またはアセット定義で表現する（MAY）。
 - 同時表示色数の制限は **撤廃**（無制限）。だが「らしさ」を出すため、1タイルセット内は色を絞ることを SHOULD とする。
 
-### 3.3 スプライト / BG（解放された部分）
-| 項目 | NES実機 | NEOFAMI |
-|---|---|---|
-| 同時表示スプライト数 | 64 | **無制限** |
-| 横並び制限 | 8個まで | **なし**（チラつき再現しない） |
-| BG層 | 1層 | **無制限（パララックス自由）** |
-| タイルセット容量 | 8KB | **無制限（PNG自由）** |
+### 3.3 スプライト / BG（SMS+ 16色モード）
+| 項目 | NES実機 | SMS実機 | NEOFAMI v0.2 |
+|---|---|---|---|
+| スプライトサイズ | 8×8 / 8×16 | 8×8（合成可） | **8×8 / 16×16 / 任意タイル合成** |
+| 1スプライトの色数 | 4色（透明含む） | 16色 | **16色（透明1 + 表示15）** |
+| スプライトパレット数 | 4共有 | 固定 | **無制限（各スプライト独自）** |
+| BGタイル色数 | 4色 | 16色 | **16色 + マルチパレット** |
+| 同時表示スプライト数 | 64 | 64 | **無制限** |
+| 横並び制限 | 8個まで | 8個まで | **なし**（チラつき再現しない） |
+| BG層 | 1層 | 1層 | **無制限（パララックス自由）** |
+| タイルセット容量 | 8KB | 16KB VRAM | **無制限（PNG自由）** |
 
 > ⚠️ AIは「スプライトが消える」「8個制限」などの**実機バグを再現してはならない**。NEOFAMIはそれらから解放されている。
 
-### 3.4 NES標準54色パレット（参照テーブル）
+#### v0.2 アセット定義例
+```typescript
+type Palette16 = [null, ...string[]]; // 透明 + 最大15色 hex
+type SpriteAsset = {
+  image: string;
+  rect: { x: number; y: number; w: number; h: number };
+  tileSize: 8 | 16;
+  palette: Palette16;
+  paletteVariants?: Palette16[];
+};
+```
+
+### 3.4 SMS 64色パレット（v0.2参照）
+SMS風アセットではRGB各チャンネルを `00 / 55 / AA / FF` の4段階に丸めた64色近似を使える。`manifest.json` では `palette: "extended"` を宣言すること。
+
+例:
+```
+#000000 #000055 #0000AA #0000FF
+#005500 #005555 #0055AA #0055FF
+#00AA00 #00AA55 #00AAAA #00AAFF
+#00FF00 #00FF55 #00FFAA #00FFFF
+...
+#FFFFFF
+```
+
+### 3.5 NES標準54色パレット（参照テーブル）
 インデックスは NES の `$00`〜`$3F` 配列に準拠。生成時は16進カラーで指定してよいが、**この54色の範囲内に収める**こと（SHOULD、`palette:"nes"`時はMUST）。
 
 ```
@@ -200,15 +234,17 @@ AIは自然言語の要望を、まずこのDSLに落としてからコード/�
 ### 7.1 アセットDSL文法
 ```neofami
 @sprite <id> {
-  style: "<NES制約の説明。色数・トーン>"
+  style: "<NEOFAMI制約の説明。NES風/SMS+16色/色数・トーン>"
   frames: [<frame名のリスト>]
   size: <W>x<H>           // 8の倍数。例 16x16 (2x2 tiles)
+  paletteMode: nes4 | sms16 | extended
 }
 
 @bg <id> {
   theme: "<情景>"
   tiles: <枚数>
   palette: nes | extended
+  tileSize: 8x8 | 16x16
 }
 
 @bgm <id> {
@@ -273,7 +309,18 @@ mygame.neofami  (ZIP)
   "author": "作者名",
   "thumbnail": "assets/bg/thumb.png",
   "entry": "code/main.ts",
-  "palette": "nes",                  // "nes" | "extended"
+  "palette": "extended",             // "nes" | "extended"
+  "graphics": {
+    "mode": "sms_plus_16",
+    "logicalResolution": [256, 240],
+    "patternTileSize": [8, 8],
+    "mapchipSize": [16, 16],
+    "spriteColorLimit": 16,
+    "bgTileColorLimit": 16,
+    "perSpritePalettes": true,
+    "perTilePalettes": true,
+    "masterPalettes": ["nes54", "sms64", "rgb"]
+  },
   "audio": { "extensions": [] },      // 例 ["vrc6"]
   "retroLock": false,
   "input": ["up","down","left","right","a","b","start","select"],
@@ -282,6 +329,7 @@ mygame.neofami  (ZIP)
 ```
 - `neofamiVersion`, `title`, `entry` は **必須**（MUST）。欠けたカートリッジを出力してはならない。
 - `palette` と `audio.extensions` は §3.2 / §4.2 と整合させること（MUST）。
+- SMS+ 16色アセットを使う場合、`palette: "extended"` と `graphics.mode: "sms_plus_16"` を宣言すること（MUST）。
 
 ---
 
@@ -291,7 +339,8 @@ mygame.neofami  (ZIP)
 
 - [ ] 解像度 256×240 を前提にコードを書いた（§2）
 - [ ] スプライト/BGは8×8タイル基準（§3.1）
-- [ ] 色は宣言したパレット範囲内（§3.2 / §3.4）
+- [ ] 色は宣言したパレット範囲内（§3.2 / §3.4 / §3.5）
+- [ ] SMS+ 16色モードでは1スプライト/1BGチップを16色以内に収めた（§3.3）
 - [ ] 実機バグ（スプライト消失・8個制限）を**再現していない**（§3.3）
 - [ ] サウンドのチャンネル名は §4 の定義のみを使用
 - [ ] 拡張音源を使うなら `manifest.json` に宣言済み（§4.2）

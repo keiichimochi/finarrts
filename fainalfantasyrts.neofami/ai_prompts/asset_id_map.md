@@ -33,6 +33,18 @@ Runtime tile/sprite IDs are mapped by the NEOFAMI loader to these 8px-aligned PN
 - fort/magic tower fragments, sign pieces, mountain/snow/cloud fragments
 - Used to keep the field background tile-composed instead of relying on a one-piece screenshot.
 
+## Enhanced SMS+ Pack: assets/enhanced/sms_skylands/
+
+NEOFAMI v0.2 / SMS+ 16-color assets imported from `sms_skylands_master_system_pack`.
+
+- `tiles/sms_skylands_mapchips_16.png`: 16x16 mapchips, each composed from 8x8 patterns.
+- `tiles/sms_skylands_patterns_8x8.png`: hardware pattern source.
+- `sprites/sms_skylands_sprites_atlas.png`: structures, units, cursor atlas.
+- `maps/sms_skylands_sample_map.png`: enhanced route-map backdrop used by the preview.
+- `palettes/sms_skylands_palettes.json`: SMS 64-color 16-entry palette sets.
+- `validation/palette_validation.json`: confirms all tiles/sprites are within 16 colors and SMS 64-color approximation.
+- Runtime composite ID: `sms_skylands_route_map` draws the sample route-map image into the 256x240 field area.
+
 ## UI: assets/bg/ui_tiles.png
 
 - bar_empty: x=8 y=0 w=8 h=8

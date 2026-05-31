@@ -4,11 +4,23 @@
   "author": "Codex",
   "thumbnail": "assets/bg/thumb.png",
   "entry": "code/main.ts",
-  "palette": "nes",
+  "palette": "extended",
+  "graphics": {
+    "mode": "sms_plus_16",
+    "logicalResolution": [256, 240],
+    "patternTileSize": [8, 8],
+    "mapchipSize": [16, 16],
+    "spriteColorLimit": 16,
+    "bgTileColorLimit": 16,
+    "perSpritePalettes": true,
+    "perTilePalettes": true,
+    "masterPalettes": ["nes54", "sms64", "rgb"],
+    "enhancedAssets": "assets/enhanced/sms_skylands/sms_skylands_assets_bundle.json"
+  },
   "audio": {
     "extensions": ["mmc5"]
   },
   "retroLock": false,
   "input": ["up", "down", "left", "right", "a", "b", "start", "select"],
-  "notes": "仕様書とモックスクショからMVPを実装。NEOFAMI実ランタイムが未提供のため、code/ は仕様API準拠のシーン実装、preview/ は確認用のHTML5 Canvasランタイムとして同梱した。ゲームタイトルは実在ブランドを避けるため Fainal Fantasy RTS とした。MAGICは小隊方針として扱い、白魔道士が最もHP割合の低い味方を自動回復する。敵マジシャンの魔法は全体小ダメージ、RETREATは固定成功率、CHAOS FRAMEは勝利/撤退/敗北で簡易変動。"
+  "notes": "files/NEOFAMI_proposal.md の NEOFAMI HARDWARE SPEC v0.2 に合わせ、SMS+ 16色スプライト/BGタイル、各スプライト独自パレット、NES54+SMS64+自由RGBの拡張パレット前提へ更新した。NEOFAMI実ランタイムが未提供のため、code/ は仕様API準拠のシーン実装、preview/ は確認用のHTML5 Canvasランタイムとして同梱した。ゲームタイトルは実在ブランドを避けるため Fainal Fantasy RTS とした。MAGICは小隊方針として扱い、白魔道士が最もHP割合の低い味方を自動回復する。敵マジシャンの魔法は全体小ダメージ、RETREATは固定成功率、CHAOS FRAMEは勝利/撤退/敗北で簡易変動。"
 }

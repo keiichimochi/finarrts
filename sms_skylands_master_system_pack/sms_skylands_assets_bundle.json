@@ -1,0 +1,3719 @@
+{
+  "schema": "sms_skylands_assets_v1",
+  "name": "SMS Skylands Original Mapchip Pack",
+  "generation_note": "Created as new original pixel art with a Sega Master System-style 64-color palette. No pixels were cut from the reference image.",
+  "target_spec": {
+    "style": "Sega Master System inspired",
+    "hardware_palette_model": "64 visible colors approximated by RGB channels 0/85/170/255",
+    "pattern_tile_px": 8,
+    "mapchip_px": 16,
+    "mapchip_composition": "Each 16x16 map chip is composed of four 8x8 patterns.",
+    "max_visible_colors_per_mapchip_or_sprite": 16,
+    "transparent_index": "palette index 0 is transparent for sprites and overlay mapchips",
+    "validation": "validation/palette_validation.json"
+  },
+  "palettes": {
+    "sky_cloud_16": [
+      "#00000000",
+      "#000000FF",
+      "#000055FF",
+      "#0000AAFF",
+      "#0055AAFF",
+      "#00AAFFFF",
+      "#55AAFFFF",
+      "#AAFFFFFF",
+      "#FFFFFFFF",
+      "#AAAAFFFF",
+      "#5555AAFF",
+      "#555555FF",
+      "#AAAAAAFF",
+      "#FFFFAAFF",
+      "#FFAA55FF",
+      "#FFAAFFFF"
+    ],
+    "grass_cliff_16": [
+      "#00000000",
+      "#000000FF",
+      "#000055FF",
+      "#005500FF",
+      "#00AA00FF",
+      "#55AA00FF",
+      "#AAFF55FF",
+      "#555500FF",
+      "#550000FF",
+      "#AA5500FF",
+      "#FFAA55FF",
+      "#FFFFAAFF",
+      "#AA0055FF",
+      "#555555FF",
+      "#AAAAAAFF",
+      "#FFAAFFFF"
+    ],
+    "mountain_stone_16": [
+      "#00000000",
+      "#000000FF",
+      "#550055FF",
+      "#5555AAFF",
+      "#AA55AAFF",
+      "#AAAAFFFF",
+      "#FFAAFFFF",
+      "#FFFFFFFF",
+      "#555555FF",
+      "#AAAAAAFF",
+      "#00AAFFFF",
+      "#AAFFFFFF",
+      "#AA5500FF",
+      "#FFAA55FF",
+      "#FFFFAAFF",
+      "#0055AAFF"
+    ],
+    "mixed_terrain_16": [
+      "#00000000",
+      "#000000FF",
+      "#005500FF",
+      "#00AA00FF",
+      "#55AA00FF",
+      "#AAFF55FF",
+      "#550055FF",
+      "#5555AAFF",
+      "#AA55AAFF",
+      "#AAAAFFFF",
+      "#FFAAFFFF",
+      "#555555FF",
+      "#AAAAAAFF",
+      "#AA5500FF",
+      "#FFAA55FF",
+      "#FFFFAAFF"
+    ],
+    "object_sprite_16": [
+      "#00000000",
+      "#000000FF",
+      "#000055FF",
+      "#555555FF",
+      "#AAAAAAFF",
+      "#FFFFFFFF",
+      "#AA5500FF",
+      "#FFAA55FF",
+      "#FFFF55FF",
+      "#0000AAFF",
+      "#5555FFFF",
+      "#00AAFFFF",
+      "#AAFFFFFF",
+      "#AA0000FF",
+      "#FF0000FF",
+      "#FF5555FF"
+    ]
+  },
+  "tileset": {
+    "image": "tiles/sms_skylands_mapchips_16.png",
+    "image_x4": "tiles/sms_skylands_mapchips_16_x4.png",
+    "tiled_tileset": "tiles/sms_skylands_mapchips_16.tsj",
+    "tilewidth": 16,
+    "tileheight": 16,
+    "columns": 16,
+    "tilecount": 80,
+    "tiles": [
+      {
+        "id": 0,
+        "name": "sky_plain",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background",
+          "void"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#0055AAFF",
+          "#00AAFFFF",
+          "#55AAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 0,
+          "tr": 1,
+          "bl": 2,
+          "br": 3
+        },
+        "sheet_rect": {
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 1,
+        "name": "sky_deep",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background",
+          "void"
+        ],
+        "color_count": 2,
+        "colors": [
+          "#0055AAFF",
+          "#55AAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 4,
+          "tr": 5,
+          "bl": 6,
+          "br": 7
+        },
+        "sheet_rect": {
+          "x": 16,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 2,
+        "name": "cloud_small",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background",
+          "cloud"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#0055AAFF",
+          "#00AAFFFF",
+          "#55AAFFFF",
+          "#AAAAFFFF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 8,
+          "tr": 9,
+          "bl": 10,
+          "br": 11
+        },
+        "sheet_rect": {
+          "x": 32,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 3,
+        "name": "cloud_big",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background",
+          "cloud"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#00AAFFFF",
+          "#AAAAFFFF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 12,
+          "tr": 13,
+          "bl": 14,
+          "br": 15
+        },
+        "sheet_rect": {
+          "x": 48,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 4,
+        "name": "cloud_shadow",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background",
+          "cloud"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#0055AAFF",
+          "#5555AAFF",
+          "#AAAAFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 16,
+          "tr": 17,
+          "bl": 18,
+          "br": 19
+        },
+        "sheet_rect": {
+          "x": 64,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 5,
+        "name": "sky_sparkle",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#00AAFFFF",
+          "#55AAFFFF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 20,
+          "tr": 21,
+          "bl": 22,
+          "br": 23
+        },
+        "sheet_rect": {
+          "x": 80,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 6,
+        "name": "grass_center",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "ground",
+          "seamless"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 24,
+          "tr": 25,
+          "bl": 26,
+          "br": 27
+        },
+        "sheet_rect": {
+          "x": 96,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 7,
+        "name": "grass_light",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "ground",
+          "seamless"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 28,
+          "tr": 29,
+          "bl": 30,
+          "br": 31
+        },
+        "sheet_rect": {
+          "x": 112,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 8,
+        "name": "grass_dark",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "ground",
+          "seamless"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#555500FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 32,
+          "tr": 33,
+          "bl": 34,
+          "br": 35
+        },
+        "sheet_rect": {
+          "x": 128,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 9,
+        "name": "grass_flowers",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "ground",
+          "detail"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#55AA00FF",
+          "#AAFF55FF",
+          "#FFAAFFFF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 36,
+          "tr": 37,
+          "bl": 38,
+          "br": 39
+        },
+        "sheet_rect": {
+          "x": 144,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 10,
+        "name": "grass_rocky",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "ground",
+          "detail"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#555555FF",
+          "#55AA00FF",
+          "#AAAAAAFF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 40,
+          "tr": 41,
+          "bl": 42,
+          "br": 43
+        },
+        "sheet_rect": {
+          "x": 160,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 11,
+        "name": "forest_dense",
+        "kind": "forest",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 3,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "forest",
+          "soft_block"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#555500FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 44,
+          "tr": 45,
+          "bl": 46,
+          "br": 47
+        },
+        "sheet_rect": {
+          "x": 176,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 12,
+        "name": "forest_sparse",
+        "kind": "forest",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "forest"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#555500FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 48,
+          "tr": 49,
+          "bl": 50,
+          "br": 51
+        },
+        "sheet_rect": {
+          "x": 192,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 13,
+        "name": "forest_edge",
+        "kind": "forest",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "forest",
+          "edge"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#555500FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 52,
+          "tr": 53,
+          "bl": 54,
+          "br": 55
+        },
+        "sheet_rect": {
+          "x": 208,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 14,
+        "name": "bush_patch",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "detail"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 56,
+          "tr": 57,
+          "bl": 58,
+          "br": 59
+        },
+        "sheet_rect": {
+          "x": 224,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 15,
+        "name": "meadow_stones",
+        "kind": "grass",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "detail"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#000000FF",
+          "#005500FF",
+          "#00AA00FF",
+          "#555555FF",
+          "#55AA00FF",
+          "#AAAAAAFF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 60,
+          "tr": 61,
+          "bl": 62,
+          "br": 63
+        },
+        "sheet_rect": {
+          "x": 240,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 16,
+        "name": "cliff_south",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "S": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 9,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#555500FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 64,
+          "tr": 65,
+          "bl": 66,
+          "br": 67
+        },
+        "sheet_rect": {
+          "x": 0,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 17,
+        "name": "cliff_north",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "N": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 68,
+          "tr": 69,
+          "bl": 70,
+          "br": 71
+        },
+        "sheet_rect": {
+          "x": 16,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 18,
+        "name": "cliff_west",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "W": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 72,
+          "tr": 73,
+          "bl": 74,
+          "br": 75
+        },
+        "sheet_rect": {
+          "x": 32,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 19,
+        "name": "cliff_east",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "E": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 76,
+          "tr": 77,
+          "bl": 78,
+          "br": 79
+        },
+        "sheet_rect": {
+          "x": 48,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 20,
+        "name": "cliff_corner_nw",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "N": 0,
+            "W": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 80,
+          "tr": 81,
+          "bl": 82,
+          "br": 83
+        },
+        "sheet_rect": {
+          "x": 64,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 21,
+        "name": "cliff_corner_ne",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "N": 0,
+            "E": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 84,
+          "tr": 85,
+          "bl": 86,
+          "br": 87
+        },
+        "sheet_rect": {
+          "x": 80,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 22,
+        "name": "cliff_corner_sw",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "S": 0,
+            "W": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 88,
+          "tr": 89,
+          "bl": 90,
+          "br": 91
+        },
+        "sheet_rect": {
+          "x": 96,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 23,
+        "name": "cliff_corner_se",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "S": 0,
+            "E": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 92,
+          "tr": 93,
+          "bl": 94,
+          "br": 95
+        },
+        "sheet_rect": {
+          "x": 112,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 24,
+        "name": "cliff_tip_south",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "S": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 96,
+          "tr": 97,
+          "bl": 98,
+          "br": 99
+        },
+        "sheet_rect": {
+          "x": 128,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 25,
+        "name": "cliff_underhang",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "S": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#00000000",
+          "#00AA00FF",
+          "#550000FF",
+          "#AA0055FF",
+          "#AA5500FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 100,
+          "tr": 101,
+          "bl": 102,
+          "br": 103
+        },
+        "sheet_rect": {
+          "x": 144,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 26,
+        "name": "cliff_crack",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "edge",
+        "autotile": {
+          "edge_mask": {
+            "S": 0
+          }
+        },
+        "tags": [
+          "island_edge"
+        ],
+        "color_count": 10,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#555500FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 104,
+          "tr": 105,
+          "bl": 106,
+          "br": 107
+        },
+        "sheet_rect": {
+          "x": 160,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 27,
+        "name": "island_shadow",
+        "kind": "cliff",
+        "palette_id": "grass_cliff_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {
+          "edge_mask": {}
+        },
+        "tags": [
+          "shadow"
+        ],
+        "color_count": 2,
+        "colors": [
+          "#00000000",
+          "#000055FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 108,
+          "tr": 109,
+          "bl": 110,
+          "br": 111
+        },
+        "sheet_rect": {
+          "x": 176,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 28,
+        "name": "mountain_base",
+        "kind": "mountain",
+        "palette_id": "mixed_terrain_16",
+        "walkable": false,
+        "move_cost": 5,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 9,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#550055FF",
+          "#5555AAFF",
+          "#55AA00FF",
+          "#AA55AAFF",
+          "#AAAAFFFF",
+          "#AAFF55FF",
+          "#FFAAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 112,
+          "tr": 113,
+          "bl": 114,
+          "br": 115
+        },
+        "sheet_rect": {
+          "x": 192,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 29,
+        "name": "mountain_peak",
+        "kind": "mountain",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#550055FF",
+          "#5555AAFF",
+          "#AA55AAFF",
+          "#AAAAFFFF",
+          "#FFAAFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 116,
+          "tr": 117,
+          "bl": 118,
+          "br": 119
+        },
+        "sheet_rect": {
+          "x": 208,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 30,
+        "name": "mountain_left_slope",
+        "kind": "mountain",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 8,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#00000000",
+          "#5555AAFF",
+          "#AA55AAFF",
+          "#FFAAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 120,
+          "tr": 121,
+          "bl": 122,
+          "br": 123
+        },
+        "sheet_rect": {
+          "x": 224,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 31,
+        "name": "mountain_right_slope",
+        "kind": "mountain",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 8,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#00000000",
+          "#550055FF",
+          "#5555AAFF",
+          "#AAAAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 124,
+          "tr": 125,
+          "bl": 126,
+          "br": 127
+        },
+        "sheet_rect": {
+          "x": 240,
+          "y": 16,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 32,
+        "name": "mountain_ridge",
+        "kind": "mountain",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550055FF",
+          "#5555AAFF",
+          "#AA55AAFF",
+          "#FFAAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 128,
+          "tr": 129,
+          "bl": 130,
+          "br": 131
+        },
+        "sheet_rect": {
+          "x": 0,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 33,
+        "name": "mountain_shadow",
+        "kind": "mountain",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#550055FF",
+          "#555555FF",
+          "#5555AAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 132,
+          "tr": 133,
+          "bl": 134,
+          "br": 135
+        },
+        "sheet_rect": {
+          "x": 16,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 34,
+        "name": "snow_peak",
+        "kind": "mountain",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#550055FF",
+          "#5555AAFF",
+          "#AA55AAFF",
+          "#AAAAFFFF",
+          "#AAFFFFFF",
+          "#FFAAFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 136,
+          "tr": 137,
+          "bl": 138,
+          "br": 139
+        },
+        "sheet_rect": {
+          "x": 32,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 35,
+        "name": "mountain_pass",
+        "kind": "mountain",
+        "palette_id": "mixed_terrain_16",
+        "walkable": true,
+        "move_cost": 4,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "mountain"
+        ],
+        "color_count": 9,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#5555AAFF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AA55AAFF",
+          "#AAFF55FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 140,
+          "tr": 141,
+          "bl": 142,
+          "br": 143
+        },
+        "sheet_rect": {
+          "x": 48,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 36,
+        "name": "stone_floor",
+        "kind": "stone",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 144,
+          "tr": 145,
+          "bl": 146,
+          "br": 147
+        },
+        "sheet_rect": {
+          "x": 64,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 37,
+        "name": "stone_cracked",
+        "kind": "stone",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 148,
+          "tr": 149,
+          "bl": 150,
+          "br": 151
+        },
+        "sheet_rect": {
+          "x": 80,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 38,
+        "name": "ruin_floor",
+        "kind": "stone",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 152,
+          "tr": 153,
+          "bl": 154,
+          "br": 155
+        },
+        "sheet_rect": {
+          "x": 96,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 39,
+        "name": "ruin_wall",
+        "kind": "structure_tile",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 4,
+        "colors": [
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 156,
+          "tr": 157,
+          "bl": 158,
+          "br": 159
+        },
+        "sheet_rect": {
+          "x": 112,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 40,
+        "name": "magic_floor",
+        "kind": "stone",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#000000FF",
+          "#00AAFFFF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 160,
+          "tr": 161,
+          "bl": 162,
+          "br": 163
+        },
+        "sheet_rect": {
+          "x": 128,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 41,
+        "name": "crystal_patch",
+        "kind": "resource",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00AAFFFF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 164,
+          "tr": 165,
+          "bl": 166,
+          "br": 167
+        },
+        "sheet_rect": {
+          "x": 144,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 42,
+        "name": "castle_courtyard",
+        "kind": "stone",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "stone"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#555555FF",
+          "#AA5500FF",
+          "#AAAAAAFF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 168,
+          "tr": 169,
+          "bl": 170,
+          "br": 171
+        },
+        "sheet_rect": {
+          "x": 160,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 43,
+        "name": "road_h",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "W"
+          ],
+          "mask": 10
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 172,
+          "tr": 173,
+          "bl": 174,
+          "br": 175
+        },
+        "sheet_rect": {
+          "x": 176,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 44,
+        "name": "road_v",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "N",
+            "S"
+          ],
+          "mask": 5
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 176,
+          "tr": 177,
+          "bl": 178,
+          "br": 179
+        },
+        "sheet_rect": {
+          "x": 192,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 45,
+        "name": "road_ne",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "N"
+          ],
+          "mask": 3
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 180,
+          "tr": 181,
+          "bl": 182,
+          "br": 183
+        },
+        "sheet_rect": {
+          "x": 208,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 46,
+        "name": "road_nw",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "N",
+            "W"
+          ],
+          "mask": 9
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 184,
+          "tr": 185,
+          "bl": 186,
+          "br": 187
+        },
+        "sheet_rect": {
+          "x": 224,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 47,
+        "name": "road_se",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "S"
+          ],
+          "mask": 6
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 188,
+          "tr": 189,
+          "bl": 190,
+          "br": 191
+        },
+        "sheet_rect": {
+          "x": 240,
+          "y": 32,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 48,
+        "name": "road_sw",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "S",
+            "W"
+          ],
+          "mask": 12
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 192,
+          "tr": 193,
+          "bl": 194,
+          "br": 195
+        },
+        "sheet_rect": {
+          "x": 0,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 49,
+        "name": "road_cross",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "N",
+            "S",
+            "W"
+          ],
+          "mask": 15
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 196,
+          "tr": 197,
+          "bl": 198,
+          "br": 199
+        },
+        "sheet_rect": {
+          "x": 16,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 50,
+        "name": "road_t_n",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "S",
+            "W"
+          ],
+          "mask": 14
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 200,
+          "tr": 201,
+          "bl": 202,
+          "br": 203
+        },
+        "sheet_rect": {
+          "x": 32,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 51,
+        "name": "road_t_s",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "N",
+            "W"
+          ],
+          "mask": 11
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 204,
+          "tr": 205,
+          "bl": 206,
+          "br": 207
+        },
+        "sheet_rect": {
+          "x": 48,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 52,
+        "name": "road_t_w",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "N",
+            "S"
+          ],
+          "mask": 7
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 208,
+          "tr": 209,
+          "bl": 210,
+          "br": 211
+        },
+        "sheet_rect": {
+          "x": 64,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 53,
+        "name": "road_t_e",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "N",
+            "S",
+            "W"
+          ],
+          "mask": 13
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 212,
+          "tr": 213,
+          "bl": 214,
+          "br": 215
+        },
+        "sheet_rect": {
+          "x": 80,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 54,
+        "name": "road_end_n",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "N"
+          ],
+          "mask": 1
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 216,
+          "tr": 217,
+          "bl": 218,
+          "br": 219
+        },
+        "sheet_rect": {
+          "x": 96,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 55,
+        "name": "road_end_s",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "S"
+          ],
+          "mask": 4
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 220,
+          "tr": 221,
+          "bl": 222,
+          "br": 223
+        },
+        "sheet_rect": {
+          "x": 112,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 56,
+        "name": "road_end_w",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "W"
+          ],
+          "mask": 8
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 224,
+          "tr": 225,
+          "bl": 226,
+          "br": 227
+        },
+        "sheet_rect": {
+          "x": 128,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 57,
+        "name": "road_end_e",
+        "kind": "road_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E"
+          ],
+          "mask": 2
+        },
+        "tags": [
+          "overlay",
+          "road"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 228,
+          "tr": 229,
+          "bl": 230,
+          "br": 231
+        },
+        "sheet_rect": {
+          "x": 144,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 58,
+        "name": "bridge_wood_h",
+        "kind": "bridge_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "overlay",
+          "bridge"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 232,
+          "tr": 232,
+          "bl": 233,
+          "br": 233
+        },
+        "sheet_rect": {
+          "x": 160,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 59,
+        "name": "bridge_wood_v",
+        "kind": "bridge_overlay",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "overlay",
+          "bridge"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 234,
+          "tr": 235,
+          "bl": 234,
+          "br": 235
+        },
+        "sheet_rect": {
+          "x": 176,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 60,
+        "name": "bridge_stone_h",
+        "kind": "bridge_overlay",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "overlay",
+          "bridge"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 236,
+          "tr": 236,
+          "bl": 237,
+          "br": 237
+        },
+        "sheet_rect": {
+          "x": 192,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 61,
+        "name": "bridge_stone_v",
+        "kind": "bridge_overlay",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "overlay",
+          "bridge"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 238,
+          "tr": 239,
+          "bl": 238,
+          "br": 239
+        },
+        "sheet_rect": {
+          "x": 208,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 62,
+        "name": "stairs_up",
+        "kind": "stairs_overlay",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "overlay",
+          "stairs"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#AAAAAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 240,
+          "tr": 241,
+          "bl": 242,
+          "br": 243
+        },
+        "sheet_rect": {
+          "x": 224,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 63,
+        "name": "stairs_down",
+        "kind": "stairs_overlay",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "overlay",
+          "stairs"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#AAAAAAFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 244,
+          "tr": 245,
+          "bl": 246,
+          "br": 247
+        },
+        "sheet_rect": {
+          "x": 240,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 64,
+        "name": "flag_marker_blue",
+        "kind": "ui_overlay",
+        "palette_id": "object_sprite_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "marker",
+          "sprite_tile"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#00AAFFFF",
+          "#555555FF",
+          "#5555FFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 248,
+          "tr": 249,
+          "bl": 250,
+          "br": 251
+        },
+        "sheet_rect": {
+          "x": 0,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 65,
+        "name": "flag_marker_red",
+        "kind": "ui_overlay",
+        "palette_id": "object_sprite_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "marker",
+          "sprite_tile"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#FF0000FF",
+          "#FF5555FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 252,
+          "tr": 253,
+          "bl": 250,
+          "br": 251
+        },
+        "sheet_rect": {
+          "x": 16,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 66,
+        "name": "selection_cursor",
+        "kind": "ui_overlay",
+        "palette_id": "object_sprite_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "ui",
+          "selection"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#00000000",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 254,
+          "tr": 255,
+          "bl": 256,
+          "br": 257
+        },
+        "sheet_rect": {
+          "x": 32,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 67,
+        "name": "fort_shadow",
+        "kind": "shadow_overlay",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "shadow",
+          "overlay"
+        ],
+        "color_count": 2,
+        "colors": [
+          "#00000000",
+          "#000055FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 258,
+          "tr": 259,
+          "bl": 260,
+          "br": 261
+        },
+        "sheet_rect": {
+          "x": 48,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 68,
+        "name": "crystal_obelisk_tile",
+        "kind": "resource",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "resource",
+          "crystal"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#00AAFFFF",
+          "#555555FF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 262,
+          "tr": 263,
+          "bl": 264,
+          "br": 265
+        },
+        "sheet_rect": {
+          "x": 64,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 69,
+        "name": "tower_roof_tile",
+        "kind": "structure_tile",
+        "palette_id": "object_sprite_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "structure"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#AAAAAAFF",
+          "#AAFFFFFF",
+          "#FFFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 266,
+          "tr": 267,
+          "bl": 268,
+          "br": 269
+        },
+        "sheet_rect": {
+          "x": 80,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 70,
+        "name": "stone_gate_tile",
+        "kind": "structure_tile",
+        "palette_id": "mountain_stone_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "structure"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 270,
+          "tr": 271,
+          "bl": 272,
+          "br": 273
+        },
+        "sheet_rect": {
+          "x": 96,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 71,
+        "name": "void_gradient",
+        "kind": "sky",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "background"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#0000AAFF",
+          "#0055AAFF",
+          "#00AAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 274,
+          "tr": 274,
+          "bl": 275,
+          "br": 275
+        },
+        "sheet_rect": {
+          "x": 112,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 72,
+        "name": "forest_mountain_transition",
+        "kind": "transition",
+        "palette_id": "mixed_terrain_16",
+        "walkable": false,
+        "move_cost": 6,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "transition"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#5555AAFF",
+          "#55AA00FF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 276,
+          "tr": 277,
+          "bl": 278,
+          "br": 279
+        },
+        "sheet_rect": {
+          "x": 128,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 73,
+        "name": "grass_mountain_transition",
+        "kind": "transition",
+        "palette_id": "mixed_terrain_16",
+        "walkable": false,
+        "move_cost": 6,
+        "collision": "block",
+        "autotile": {},
+        "tags": [
+          "transition"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#5555AAFF",
+          "#55AA00FF",
+          "#AA55AAFF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 280,
+          "tr": 281,
+          "bl": 282,
+          "br": 283
+        },
+        "sheet_rect": {
+          "x": 144,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 74,
+        "name": "grass_stone_transition",
+        "kind": "transition",
+        "palette_id": "mixed_terrain_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "transition"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#000000FF",
+          "#005500FF",
+          "#00AA00FF",
+          "#555555FF",
+          "#55AA00FF",
+          "#AAAAAAFF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 284,
+          "tr": 285,
+          "bl": 286,
+          "br": 287
+        },
+        "sheet_rect": {
+          "x": 160,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 75,
+        "name": "grass_cliff_transition",
+        "kind": "transition",
+        "palette_id": "grass_cliff_16",
+        "walkable": true,
+        "move_cost": 3,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "transition"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#550000FF",
+          "#55AA00FF",
+          "#AA5500FF",
+          "#AAFF55FF",
+          "#FFAA55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 288,
+          "tr": 289,
+          "bl": 290,
+          "br": 291
+        },
+        "sheet_rect": {
+          "x": 176,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 76,
+        "name": "ruin_grass",
+        "kind": "transition",
+        "palette_id": "mixed_terrain_16",
+        "walkable": true,
+        "move_cost": 2,
+        "collision": "none",
+        "autotile": {},
+        "tags": [
+          "transition",
+          "ruins"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#005500FF",
+          "#00AA00FF",
+          "#555555FF",
+          "#55AA00FF",
+          "#AAAAAAFF",
+          "#AAFF55FF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 292,
+          "tr": 293,
+          "bl": 294,
+          "br": 295
+        },
+        "sheet_rect": {
+          "x": 192,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 77,
+        "name": "path_stone_h",
+        "kind": "road_overlay",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "E",
+            "W"
+          ],
+          "mask": 10
+        },
+        "tags": [
+          "overlay",
+          "road",
+          "stone"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 296,
+          "tr": 297,
+          "bl": 298,
+          "br": 299
+        },
+        "sheet_rect": {
+          "x": 208,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 78,
+        "name": "path_stone_v",
+        "kind": "road_overlay",
+        "palette_id": "mountain_stone_16",
+        "walkable": true,
+        "move_cost": 1,
+        "collision": "none",
+        "autotile": {
+          "road_dirs": [
+            "N",
+            "S"
+          ],
+          "mask": 5
+        },
+        "tags": [
+          "overlay",
+          "road",
+          "stone"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 300,
+          "tr": 301,
+          "bl": 302,
+          "br": 303
+        },
+        "sheet_rect": {
+          "x": 224,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      },
+      {
+        "id": 79,
+        "name": "debug_empty",
+        "kind": "debug",
+        "palette_id": "sky_cloud_16",
+        "walkable": false,
+        "move_cost": 99,
+        "collision": "void",
+        "autotile": {},
+        "tags": [
+          "debug"
+        ],
+        "color_count": 2,
+        "colors": [
+          "#00000000",
+          "#FFAAFFFF"
+        ],
+        "image": "tiles/sms_skylands_mapchips_16.png",
+        "pattern_ids_8x8": {
+          "tl": 304,
+          "tr": 305,
+          "bl": 306,
+          "br": 307
+        },
+        "sheet_rect": {
+          "x": 240,
+          "y": 64,
+          "w": 16,
+          "h": 16
+        }
+      }
+    ]
+  },
+  "patterns_8x8": {
+    "image": "tiles/sms_skylands_patterns_8x8.png",
+    "image_x4": "tiles/sms_skylands_patterns_8x8_x4.png",
+    "json": "tiles/sms_skylands_patterns_8x8.json",
+    "count": 308
+  },
+  "sprites": {
+    "atlas_image": "sprites/sms_skylands_sprites_atlas.png",
+    "atlas_x4": "sprites/sms_skylands_sprites_atlas_x4.png",
+    "atlas_json": "sprites/sms_skylands_sprites_atlas.json",
+    "sprites": [
+      {
+        "id": 0,
+        "name": "castle_gray_red_flag",
+        "kind": "structure",
+        "palette_id": "object_sprite_16",
+        "width": 48,
+        "height": 48,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 8,
+          "y": 22,
+          "w": 32,
+          "h": 18
+        },
+        "tags": [
+          "building",
+          "castle"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#555555FF",
+          "#AA0000FF",
+          "#AAAAAAFF",
+          "#FF0000FF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/00_castle_gray_red_flag.png",
+        "atlas_frame": {
+          "x": 2,
+          "y": 2,
+          "w": 48,
+          "h": 48
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 1,
+        "name": "magic_tower_cyan",
+        "kind": "structure",
+        "palette_id": "object_sprite_16",
+        "width": 32,
+        "height": 48,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 10,
+          "y": 18,
+          "w": 12,
+          "h": 22
+        },
+        "tags": [
+          "building",
+          "tower",
+          "magic"
+        ],
+        "color_count": 9,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#00AAFFFF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#AAFFFFFF",
+          "#FFFF55FF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/01_magic_tower_cyan.png",
+        "atlas_frame": {
+          "x": 52,
+          "y": 2,
+          "w": 32,
+          "h": 48
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 2,
+        "name": "sky_ruins_arch",
+        "kind": "structure",
+        "palette_id": "object_sprite_16",
+        "width": 48,
+        "height": 40,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 5,
+          "y": 16,
+          "w": 38,
+          "h": 20
+        },
+        "tags": [
+          "building",
+          "ruins"
+        ],
+        "color_count": 6,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/02_sky_ruins_arch.png",
+        "atlas_frame": {
+          "x": 86,
+          "y": 2,
+          "w": 48,
+          "h": 40
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 3,
+        "name": "crystal_shrine",
+        "kind": "structure",
+        "palette_id": "object_sprite_16",
+        "width": 32,
+        "height": 40,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 8,
+          "y": 22,
+          "w": 16,
+          "h": 14
+        },
+        "tags": [
+          "building",
+          "resource"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#00AAFFFF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/03_crystal_shrine.png",
+        "atlas_frame": {
+          "x": 136,
+          "y": 2,
+          "w": 32,
+          "h": 40
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 4,
+        "name": "fortress_gate_red",
+        "kind": "structure",
+        "palette_id": "object_sprite_16",
+        "width": 48,
+        "height": 40,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 6,
+          "y": 16,
+          "w": 36,
+          "h": 18
+        },
+        "tags": [
+          "building",
+          "fortress"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#555555FF",
+          "#AA0000FF",
+          "#AAAAAAFF",
+          "#FF0000FF"
+        ],
+        "individual_image": "sprites/individual/04_fortress_gate_red.png",
+        "atlas_frame": {
+          "x": 170,
+          "y": 2,
+          "w": 48,
+          "h": 40
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 5,
+        "name": "bridge_wood_long_h",
+        "kind": "bridge",
+        "palette_id": "grass_cliff_16",
+        "width": 48,
+        "height": 16,
+        "anchor": [
+          0,
+          0.5
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 0,
+          "y": 4,
+          "w": 48,
+          "h": 8
+        },
+        "tags": [
+          "bridge"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#550000FF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFFAAFF"
+        ],
+        "individual_image": "sprites/individual/05_bridge_wood_long_h.png",
+        "atlas_frame": {
+          "x": 2,
+          "y": 52,
+          "w": 48,
+          "h": 16
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 6,
+        "name": "bridge_stone_long_h",
+        "kind": "bridge",
+        "palette_id": "object_sprite_16",
+        "width": 48,
+        "height": 16,
+        "anchor": [
+          0,
+          0.5
+        ],
+        "collision": {
+          "type": "rect",
+          "x": 0,
+          "y": 4,
+          "w": 48,
+          "h": 8
+        },
+        "tags": [
+          "bridge"
+        ],
+        "color_count": 5,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#555555FF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/06_bridge_stone_long_h.png",
+        "atlas_frame": {
+          "x": 52,
+          "y": 52,
+          "w": 48,
+          "h": 16
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 7,
+        "name": "blue_dragoon",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 6
+        },
+        "tags": [
+          "unit",
+          "blue"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#0000AAFF",
+          "#5555FFFF",
+          "#FFFF55FF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/07_blue_dragoon.png",
+        "atlas_frame": {
+          "x": 102,
+          "y": 52,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 8,
+        "name": "blue_sky_rider",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 7
+        },
+        "tags": [
+          "unit",
+          "blue",
+          "mount"
+        ],
+        "color_count": 8,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#0000AAFF",
+          "#5555FFFF",
+          "#AA5500FF",
+          "#FFAA55FF",
+          "#FFFF55FF"
+        ],
+        "individual_image": "sprites/individual/08_blue_sky_rider.png",
+        "atlas_frame": {
+          "x": 128,
+          "y": 52,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 9,
+        "name": "blue_mage",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 5
+        },
+        "tags": [
+          "unit",
+          "blue",
+          "caster"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000055FF",
+          "#0000AAFF",
+          "#5555FFFF",
+          "#AAAAAAFF",
+          "#AAFFFFFF",
+          "#FFFF55FF"
+        ],
+        "individual_image": "sprites/individual/09_blue_mage.png",
+        "atlas_frame": {
+          "x": 154,
+          "y": 52,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 10,
+        "name": "blue_swordsman",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 5
+        },
+        "tags": [
+          "unit",
+          "blue"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#0000AAFF",
+          "#5555FFFF",
+          "#AAAAAAFF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/10_blue_swordsman.png",
+        "atlas_frame": {
+          "x": 180,
+          "y": 52,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 11,
+        "name": "red_soldier",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 5
+        },
+        "tags": [
+          "unit",
+          "red"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#AA0000FF",
+          "#AAAAAAFF",
+          "#FF0000FF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/11_red_soldier.png",
+        "atlas_frame": {
+          "x": 206,
+          "y": 52,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 12,
+        "name": "red_lancer",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 5
+        },
+        "tags": [
+          "unit",
+          "red"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#AA0000FF",
+          "#AAAAAAFF",
+          "#FF0000FF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/12_red_lancer.png",
+        "atlas_frame": {
+          "x": 2,
+          "y": 78,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 13,
+        "name": "red_banner_guard",
+        "kind": "unit",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "collision": {
+          "type": "circle",
+          "x": 12,
+          "y": 16,
+          "r": 5
+        },
+        "tags": [
+          "unit",
+          "red",
+          "banner"
+        ],
+        "color_count": 7,
+        "colors": [
+          "#00000000",
+          "#000000FF",
+          "#000055FF",
+          "#AA0000FF",
+          "#FF0000FF",
+          "#FF5555FF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/13_red_banner_guard.png",
+        "atlas_frame": {
+          "x": 28,
+          "y": 78,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      },
+      {
+        "id": 14,
+        "name": "selection_cursor_24",
+        "kind": "ui",
+        "palette_id": "object_sprite_16",
+        "width": 24,
+        "height": 24,
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "collision": {
+          "type": "none"
+        },
+        "tags": [
+          "ui"
+        ],
+        "color_count": 3,
+        "colors": [
+          "#00000000",
+          "#AAFFFFFF",
+          "#FFFFFFFF"
+        ],
+        "individual_image": "sprites/individual/14_selection_cursor_24.png",
+        "atlas_frame": {
+          "x": 54,
+          "y": 78,
+          "w": 24,
+          "h": 24
+        },
+        "atlas_image": "sprites/sms_skylands_sprites_atlas.png"
+      }
+    ]
+  },
+  "sample_map": {
+    "json": "maps/sms_skylands_sample_map.json",
+    "tiled_tmj": "maps/sms_skylands_sample_map.tmj",
+    "preview": "previews/sample_map_preview_x3.png"
+  },
+  "autotile_rules": {
+    "road_mask_bits": {
+      "N": 1,
+      "E": 2,
+      "S": 4,
+      "W": 8
+    },
+    "road_tile_ids": {
+      "road_h": 43,
+      "road_v": 44,
+      "road_ne": 45,
+      "road_nw": 46,
+      "road_se": 47,
+      "road_sw": 48,
+      "road_cross": 49,
+      "road_t_n": 50,
+      "road_t_s": 51,
+      "road_t_w": 52,
+      "road_t_e": 53,
+      "road_end_n": 54,
+      "road_end_s": 55,
+      "road_end_w": 56,
+      "road_end_e": 57,
+      "path_stone_h": 77,
+      "path_stone_v": 78
+    },
+    "edge_tile_ids": {
+      "cliff_south": 16,
+      "cliff_north": 17,
+      "cliff_west": 18,
+      "cliff_east": 19,
+      "cliff_corner_nw": 20,
+      "cliff_corner_ne": 21,
+      "cliff_corner_sw": 22,
+      "cliff_corner_se": 23,
+      "cliff_tip_south": 24,
+      "cliff_underhang": 25,
+      "cliff_crack": 26
+    }
+  }
+}
