@@ -1,0 +1,41 @@
+@sprite allied_units {
+  style: "NES palette, MMC5 dense fantasy RTS units, blue/white/gold allies, 4-color groups, readable 16x16 silhouettes"
+  frames: ["warrior_idle", "knight_guard", "white_mage_cast"]
+  size: 16x16
+}
+
+@sprite enemy_units {
+  style: "NES palette, green goblin frontliners and purple rear magician, red-purple cast orb"
+  frames: ["goblin_a", "goblin_b", "magician_cast"]
+  size: 16x16
+}
+
+@bg skyfront_battle {
+  theme: "floating continent road, cloud sea, broken bridge, fork sign, fortress node and magic tower silhouettes"
+  tiles: 96
+  palette: nes
+}
+
+@bgm battle_march {
+  mood: "urgent fantasy squad battle march with MMC5 pulse reinforcement"
+  channels: [pulse1, pulse2, triangle, noise, mmc5_pulse1, mmc5_pulse2]
+  length: 24s
+  loop: true
+}
+
+@se command_tick {
+  channel: noise
+  desc: "short menu cursor tick"
+}
+
+@se heal_cast {
+  channel: dpcm
+  desc: "bright high magic shimmer"
+}
+
+@level skyfront_crossroads {
+  theme: "single floating continent route map with fort, road, and magic tower nodes"
+  length: short
+  enemies: [goblin x2, magician x1]
+  boss: none
+}

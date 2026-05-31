@@ -1,0 +1,14 @@
+{
+  "neofamiVersion": "1.0",
+  "title": "Fainal Fantasy RTS: Skyfront",
+  "author": "Codex",
+  "thumbnail": "assets/bg/thumb.png",
+  "entry": "code/main.ts",
+  "palette": "nes",
+  "audio": {
+    "extensions": ["mmc5"]
+  },
+  "retroLock": false,
+  "input": ["up", "down", "left", "right", "a", "b", "start", "select"],
+  "notes": "仕様書とモックスクショからMVPを実装。NEOFAMI実ランタイムが未提供のため、code/ は仕様API準拠のシーン実装、preview/ は確認用のHTML5 Canvasランタイムとして同梱した。ゲームタイトルは実在ブランドを避けるため Fainal Fantasy RTS とした。MAGICは小隊方針として扱い、白魔道士が最もHP割合の低い味方を自動回復する。敵マジシャンの魔法は全体小ダメージ、RETREATは固定成功率、CHAOS FRAMEは勝利/撤退/敗北で簡易変動。"
+}

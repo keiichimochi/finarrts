@@ -1,0 +1,12 @@
+{
+  "channel": "dpcm",
+  "bpm": 150,
+  "channels": {
+    "dpcm": [
+      { "note": "C5", "dur": 1 },
+      { "note": "E5", "dur": 1 },
+      { "note": "G5", "dur": 2 }
+    ]
+  },
+  "loop": false
+}

@@ -1,0 +1,11 @@
+{
+  "channel": "noise",
+  "bpm": 150,
+  "channels": {
+    "noise": [
+      { "note": 2, "dur": 1 },
+      { "note": 0, "dur": 1, "rest": true }
+    ]
+  },
+  "loop": false
+}

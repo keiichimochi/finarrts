@@ -1,0 +1,29 @@
+{
+  "bpm": 150,
+  "channels": {
+    "pulse1": [
+      {"note": "E4", "dur": 2, "duty": 2}, {"note": "G4", "dur": 2}, {"note": "A4", "dur": 4}, {"note": "B4", "dur": 2},
+      {"note": "A4", "dur": 2}, {"note": "G4", "dur": 4}, {"note": "E4", "dur": 4}, {"note": "D4", "dur": 4}
+    ],
+    "pulse2": [
+      {"note": "B3", "dur": 4, "duty": 1}, {"note": "D4", "dur": 4}, {"note": "E4", "dur": 4}, {"note": "G4", "dur": 4},
+      {"note": "F4", "dur": 4}, {"note": "E4", "dur": 4}
+    ],
+    "triangle": [
+      {"note": "E2", "dur": 4}, {"note": "E2", "dur": 4}, {"note": "A2", "dur": 4}, {"note": "G2", "dur": 4},
+      {"note": "E2", "dur": 4}, {"note": "D2", "dur": 4}
+    ],
+    "noise": [
+      {"note": 4, "dur": 1}, {"note": 0, "dur": 1, "rest": true}, {"note": 8, "dur": 2},
+      {"note": 0, "dur": 2, "rest": true}, {"note": 5, "dur": 1}, {"note": 6, "dur": 1}
+    ],
+    "mmc5_pulse1": [
+      {"note": "E5", "dur": 8, "duty": 2}, {"note": "D5", "dur": 4}, {"note": "B4", "dur": 4},
+      {"note": "A4", "dur": 8}
+    ],
+    "mmc5_pulse2": [
+      {"note": "G3", "dur": 8, "duty": 1}, {"note": "A3", "dur": 8}, {"note": "B3", "dur": 8}
+    ]
+  },
+  "loop": true
+}
